@@ -1,7 +1,8 @@
 [My data source](https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529#fullreport)
+[Supporting documents](http://researchbriefings.files.parliament.uk/documents/CBP-7529/CBP-7529.Download.xlsx)
 
 # Milestone Project 2
-gigit
+
 One or two paragraphs providing an overview of your project.
 
 Essentially, this part is your sales pitch.
@@ -93,6 +94,8 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 Content
 The text for section Y was copied from the Wikipedia article Z
+The image used for the favicon
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@element5digital?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Element5 Digital"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Element5 Digital</span></a>
 
 <hr>
 
@@ -104,6 +107,10 @@ The free image used to generate the favicon was obtained from [here](#) using th
 <hr>
 
 ### Acknowledgements
+
+### Inspiration
+
+Having just returned to England after a long period abroad, I found myself somewhat out of the loop with regards to politics, which was particularly emphasised by the upcoming election on December 12th, 2019. I spent rather a lot of time trying to improve my understanding and knowledge in order to feel like I would make an informed vote, without really succeeding as much as I had hoped. I chose to use the topic for my project in an attempt to answer my own questions and possibly provide a more vsual understanding of where GB stood in respect of the political parties based on the past 100 years. I felt this could potentially provide a platform for further questions to arise and construct a means to answer them.
 
 ### Wireframes
 
