@@ -1,60 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Elections Data Visualisation</title>
 
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="static/css/dc.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Elections Data Visualisation</title>
 
-    <script src="static/js/d3.min.js"></script>
-    <script src="static/js/crossfilter.min.js"></script>
-    <script src="static/js/dc.min.js"></script>
-    <script src="static/js/queue.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/dc.min.css" />
 
-  <body>
-    <div class="container text-center">
-      <div id="CON2-votes-per-year">
-        <h2>Conservative Party</h2>
-      </div>
+  <script src="static/js/d3.min.js"></script>
+  <script src="static/js/crossfilter.min.js"></script>
+  <script src="static/js/dc.min.js"></script>
+  <script src="static/js/queue.min.js"></script>
+  <script src="static/js/charts.js"></script>
+</head>
+
+<body>
+  <div class="container text-center">
+    <div id="CON2-votes-per-year">
+      <h2>Conservative Party</h2>
     </div>
+  </div>
 
-    <script>
-      queue()
-        .defer(d3.json, "data/votes-M.json")
-        .await(makeGraphs);
+</body>
 
-      function makeGraphs(error, votesData) {
-        if (error) throw error;
-
-        var ndx = crossfilter(votesData);
-
-        var year_dim = ndx.dimension(dc.pluck("YEAR"));
-        var total_votes_per_year = year_dim.group().reduceSum(dc.pluck("CON2"));
-
-        dc.barChart("#CON2-votes-per-year")
-          .width(800)
-          .height(350)
-          .margins({
-            top: 10,
-            right: 50,
-            bottom: 40,
-            left: 20
-          })
-          .dimension(year_dim)
-          .group(total_votes_per_year)
-          .transitionDuration(500)
-          .x(d3.scale.ordinal())
-          .xUnits(dc.units.ordinal)
-          .xAxisLabel("Votes (Millions) per Year")
-
-          .yAxis().ticks(10);
-
-        dc.renderAll();
-      }
-    </script>
-  </body>
 </html>
