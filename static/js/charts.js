@@ -40,8 +40,8 @@ function compareVotes(error, votesData) {
 
     var ndx = crossfilter(votesData);
 
-    var year_dim = ndx.dimension(dc.pluck("YEAR"));
-    var total_votes_per_year = year_dim.group().reduceSum(dc.pluck("CON2"));
+    var year_dim = ndx.dimension(dc.pluck("Party"));
+    var total_votes_per_year = year_dim.group().reduceSum(dc.pluck("1917"));
 
     dc.barChart("#compare-votes-per-year")
         .width(800)
