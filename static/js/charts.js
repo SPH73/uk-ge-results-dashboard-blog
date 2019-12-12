@@ -40,8 +40,8 @@ function compareVotes(error, votesData) {
 
     var ndx = crossfilter(votesData);
 
-    var year_dim = ndx.dimension(dc.pluck("Party"));
-    var total_votes_per_year = year_dim.group().reduceSum(dc.pluck("1917"));
+    var party_dim = ndx.dimension(dc.pluck("Party"));
+    var total_votes_per_year = party_dim.group().reduceSum(dc.pluck("1917"));
 
     dc.barChart("#compare-votes-per-year")
         .width(800)
@@ -52,7 +52,7 @@ function compareVotes(error, votesData) {
             bottom: 40,
             left: 20
         })
-        .dimension(year_dim)
+        .dimension(party_dim)
         .group(total_votes_per_year)
         .transitionDuration(500)
         .x(d3.scale.ordinal())
