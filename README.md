@@ -3,9 +3,7 @@
 
 # Milestone Project 2
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+This aim of this project is to create a visual representation of the public perspective of government based on how they have voted over the past century at each election, using a presentation of known results, to see whether there was any noticeable patterns associated with istorical events which may have played a role in swaying the vote in a particular direction. I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distingush these relational patterns when cognitive analysis was replaced by visual perception.
 
 <hr>
 
@@ -45,6 +43,8 @@ Another feature idea
 ### Technologies Used
 
 [Favicon Generator](https://www.favicon-generator.org/) is the tool I used to create the icons for this project. Absolutely fabulous as it only took a miniute and I had all the icons and code supplied simply by providing an image to the genrator.
+
+[File Type Converter](https://onlinetsvtools.com/convert-tsv-to-json)
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
