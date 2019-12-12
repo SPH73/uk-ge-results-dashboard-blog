@@ -43,7 +43,7 @@ function compareVotes(error, votesData) {
     var year_dim = ndx.dimension(dc.pluck("YEAR"));
     var total_votes_per_year = year_dim.group().reduceSum(dc.pluck("CON2"));
 
-    dc.barChart("#CON2-votes-per-year")
+    dc.barChart("#compare-votes-per-year")
         .width(800)
         .height(350)
         .margins({
