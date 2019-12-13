@@ -56,7 +56,7 @@ function show_votes_comparison_two(ndx) {
     let stackedChart = dc.barChart("#compare-2");
 
     stackedChart
-        .width(800)
+        .width(1200)
         .height(500)
         .dimension(year_dim)
         .group(votes_per_year_others, "All Other")
@@ -76,7 +76,7 @@ function show_votes_comparison_two(ndx) {
         .legend(
             dc
             .legend()
-            .x(720)
+            .x(920)
             .y(0)
             .itemHeight(15)
             .gap(5)
