@@ -76,7 +76,7 @@ function show_votes_comparison_two(ndx) {
         .legend(
             dc
             .legend()
-            .x(920)
+            .x(60)
             .y(0)
             .itemHeight(15)
             .gap(5)
