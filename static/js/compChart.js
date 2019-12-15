@@ -13,45 +13,25 @@ function makeGraphs(error, votesData) {
 function show_votes_comparison_two(ndx) {
     let year_dim = ndx.dimension(dc.pluck("Year"));
 
-    let votes_per_year_others = year_dim.group().reduceSum(function (d) {
-        if (d.Party === "Other") {
-            return d.Votes;
-        } else {
-            return 0;
+    function votes_per_year(Party) {
+        return function (d) {
+            if (d.Party === Party) {
+                return +d.Votes;
+            } else {
+                return 0;
+            }
         }
-    });
+    };
 
-    let votes_per_year_scot = year_dim.group().reduceSum(function (d) {
-        if (d.Party === "PC/SNP") {
-            return d.Votes;
-        } else {
-            return 0;
-        }
-    });
+    let votes_per_year_others = year_dim.group().reduceSum(votes_per_year("Other"));
 
-    let votes_per_year_LD3 = year_dim.group().reduceSum(function (d) {
-        if (d.Party === "LD3") {
-            return d.Votes;
-        } else {
-            return 0;
-        }
-    });
+    let votes_per_year_scot = year_dim.group().reduceSum(votes_per_year("PC/SNP"))
 
-    let votes_per_year_LAB = year_dim.group().reduceSum(function (d) {
-        if (d.Party === "LAB") {
-            return d.Votes;
-        } else {
-            return 0;
-        }
-    });
+    let votes_per_year_LD3 = year_dim.group().reduceSum(votes_per_year("LD3"));
 
-    let votes_per_year_CON2 = year_dim.group().reduceSum(function (d) {
-        if (d.Party === "CON2") {
-            return d.Votes;
-        } else {
-            return 0;
-        }
-    });
+    let votes_per_year_LAB = year_dim.group().reduceSum(votes_per_year("LAB"));
+
+    let votes_per_year_CON2 = year_dim.group().reduceSum(votes_per_year("CON2"));
 
     let stackedChart = dc.barChart("#compare-2");
 
@@ -81,8 +61,6 @@ function show_votes_comparison_two(ndx) {
             .itemHeight(15)
             .gap(5)
         );
-
-
 
     dc.renderAll();
 }
