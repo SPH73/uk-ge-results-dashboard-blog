@@ -13,9 +13,9 @@ function makeGraphs(error, votesData) {
 function show_votes_comparison_two(ndx) {
     let year_dim = ndx.dimension(dc.pluck("Year"));
 
-    function votes_per_year(Party) {
+    function votes_per_year(party) {
         return function (d) {
-            if (d.Party === Party) {
+            if (d.Party === party) {
                 return +d.Votes;
             } else {
                 return 0;
@@ -33,7 +33,7 @@ function show_votes_comparison_two(ndx) {
 
     let votes_per_year_CON2 = year_dim.group().reduceSum(votes_per_year("CON2"));
 
-    let stackedChart = dc.barChart("#compare-2");
+    let stackedChart = dc.barChart("#compare-votes");
 
     stackedChart
         .width(1200)
