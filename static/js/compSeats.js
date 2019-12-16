@@ -13,16 +13,10 @@ function makeGraphs(error, seatsData) {
 
 function show_seats_comparison(ndx) {
 
-    let year_dim = ndx.dimension(function (d) {
-        date = new Date(+d.Year)
-        return date;
-    });
+    let year_dim = ndx.dimension(dc.pluck("Year"));
 
     let minYear = year_dim.bottom(1)[0].Year;
     let maxYear = year_dim.top(1)[0].Year;
-
-    console.log(minYear);
-    console.log(maxYear);
 
     function seats_per_year(party) {
         return function (d) {
@@ -50,7 +44,7 @@ function show_seats_comparison(ndx) {
         .height(500)
         .dimension(year_dim)
         .legend(dc.legend().x(80).y(20).itemHeight(15).gap(5))
-        .x(d3.scale.linear().domain([minYear, maxYear]))
+        .x(d3.time.scale().domain([minYear, maxYear]))
         .yAxisLabel("Seats gained")
         .renderHorizontalGridLines(true)
         .compose([
