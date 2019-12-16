@@ -13,7 +13,10 @@ function makeGraphs(error, seatsData) {
 
 function show_seats_comparison(ndx) {
 
-    let year_dim = ndx.dimension(dc.pluck("Year"));
+    let year_dim = ndx.dimension(function (d) {
+        date = new Date(+d.Year)
+        return date;
+    });
 
     let minYear = year_dim.bottom(1)[0].Year;
     let maxYear = year_dim.top(1)[0].Year;
