@@ -13,10 +13,7 @@ function makeGraphs(error, seatsData) {
 
 function show_seats_comparison(ndx) {
 
-    // let year_dim = ndx.dimension(function (d) {
-    //     date = new Date(+d.Year);
-    //     return date;
-    // });
+
     let year_dim = ndx.dimension(dc.pluck("Year"));
 
     let minYear = year_dim.bottom(1)[0].Year;
@@ -46,10 +43,18 @@ function show_seats_comparison(ndx) {
     compositeChart
         .width(1200)
         .height(500)
+        .useViewBoxResizing(true)
         .dimension(year_dim)
-        .legend(dc.legend().x(80).y(20).itemHeight(15).gap(5))
+        .legend(dc.legend().x(80).y(10).itemHeight(15).gap(5))
+        .margins({
+            top: 10,
+            right: 50,
+            bottom: 50,
+            left: 50
+        })
         .x(d3.time.scale().domain([minYear, maxYear]))
-        .yAxisLabel("Seats gained")
+        .yAxisLabel("Total No. Seats gained")
+        .xAxisLabel("Election Year")
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)

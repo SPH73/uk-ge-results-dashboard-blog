@@ -36,8 +36,9 @@ function show_votes_comparison_two(ndx) {
     let stackedChart = dc.barChart("#compare-votes");
 
     stackedChart
-        .width(1200)
+        .width(1150)
         .height(500)
+        .useViewBoxResizing(true)
         .dimension(year_dim)
         .group(votes_per_year_others, "All Other")
         .stack(votes_per_year_scot, "PC/SNP")
