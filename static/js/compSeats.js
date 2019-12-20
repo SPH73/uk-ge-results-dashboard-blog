@@ -52,6 +52,7 @@ function show_seats_comparison(ndx) {
             bottom: 50,
             left: 50
         })
+        .brushOn(false)
         .x(d3.time.scale().domain([minYear, maxYear]))
         .yAxisLabel("Total No. Seats gained")
         .xAxisLabel("Election Year")
@@ -72,8 +73,8 @@ function show_seats_comparison(ndx) {
             dc.lineChart(compositeChart)
             .colors('#0087dc')
             .group(con2_seats, 'Conservative')
-        ])
-        .brushOn(false);
+        ]);
+
 
     dc.renderAll();
 }

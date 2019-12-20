@@ -38,6 +38,12 @@ function show_votes_comparison_two(ndx) {
     stackedChart
         .width(1150)
         .height(500)
+        .margins({
+            top: 10,
+            right: 50,
+            bottom: 50,
+            left: 50
+        })
         .useViewBoxResizing(true)
         .dimension(year_dim)
         .group(votes_per_year_others, "All Other")
@@ -48,12 +54,6 @@ function show_votes_comparison_two(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Votes in Millions per party per year")
-        .margins({
-            top: 10,
-            right: 50,
-            bottom: 50,
-            left: 50
-        })
         .legend(
             dc
             .legend()
