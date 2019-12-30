@@ -7,6 +7,12 @@ function makeGraphs(error, seatsData) {
 
     let ndx = crossfilter(seatsData);
 
+    let parseYear = d3.time.format("%Y-%m").parse;
+
+    seatsData.forEach(function (d) {
+        d.Year = parseYear(d.Year);
+    });
+
     show_seats_comparison(ndx);
 
 }
