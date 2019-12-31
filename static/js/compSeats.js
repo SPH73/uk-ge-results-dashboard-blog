@@ -65,7 +65,7 @@ function show_seats_comparison(ndx) {
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)
-            .colors('black')
+            .colors('purple')
             .group(other_seats, 'Other'),
             dc.lineChart(compositeChart)
             .colors('#3F8428')
