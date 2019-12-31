@@ -5,7 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Elections Data Visualisation</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/android-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Great Britains General Elections</title>
+
   <!-- Styling -->
   <link rel="stylesheet" href="static/css/bootstrap.min.css" />
   <link rel="stylesheet" href="static/css/dc.min.css" />
@@ -14,9 +33,11 @@
   <script src="static/js/crossfilter.min.js"></script>
   <script src="static/js/dc.min.js"></script>
   <script src="static/js/queue.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- Internal Scripts -->
   <script src="static/js/compVotes.js"></script>
   <script src="static/js/compSeats.js"></script>
+  <script src="static/js/pie-2019.js"></script>
 </head>
 
 <body>
@@ -56,6 +77,7 @@
     </li>
     </ul>
   </nav>
+
   <!-- HEADING -->
   <div class="jumbotron text-center">
     <h1>Great Britain's General Election 2019</h1>
@@ -63,23 +85,28 @@
     <p class="secondary-text">Before 6am on the morning of the election, the 'Tories' already knew they had the majority
       vote. That's quite a remarkable position to start in. What do the results tell us?</p>
   </div>
-  <!-- 2019 RESULTS -->
+  <!-- CHARTS -->
+  <!-- 2019 Results -->
   <section>
     <div class="container-fluid">
       <div class="row text-center">
-        <div class="col-sm-6">
+        <div class="col-12">
           <h2>How has the political landscape changed since 2017?</h2>
-          <div id="pie-seats-2019"></div>
         </div>
-        <div class="col-sm-6">
-          <h2>How have the seats in parliament been distributed?</h2>
-          <div id="chnage-2019"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-6" id="pie-votes-2019">
+          <h3>How were the votes cast?</h3>
+        </div>
+        <div class="col-sm-6" id="pie-seats-2019">
+          <h3>How have the seats in parliament been distributed?</h3>
         </div>
       </div>
     </div>
     <hr>
   </section>
-  <!-- HISTORICAL RESULTS-->
+
+  <!-- Historical Results-->
   <!-- Votes -->
   <section>
     <div class="container-fluid">
@@ -90,22 +117,24 @@
       </div>
       <div class="row text-center">
         <div class="col-12" id="compare-votes">
-          <h2>Votes Comparison</h2>
+          <h4>Votes Comparison</h4>
         </div>
   </section>
   <hr>
+
   <!-- Seats -->
   <section>
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-12" id="composite">
-          <h2>Seats Comparison</h2>
+          <h4>Seats Comparison</h4>
         </div>
       </div>
     </div>
 
   </section>
   <hr>
+
   <!-- RESOURCES -->
   <section>
     <div class="container-fluid">
@@ -125,7 +154,6 @@
   </section>
 
   <footer>
-
   </footer>
 </body>
 
