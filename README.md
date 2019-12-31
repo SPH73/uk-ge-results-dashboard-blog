@@ -1,9 +1,12 @@
 [My data source](https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529#fullreport)
 [Supporting documents](http://researchbriefings.files.parliament.uk/documents/CBP-7529/CBP-7529.Download.xlsx)
+[Pollmaker](https://www.poll-maker.com/)
 
 # Milestone Project 2
 
-This aim of this project is to create a visual representation of the public perspective of government based on how they have voted over the past century at each election, using a presentation of known results, to see whether there was any noticeable patterns associated with istorical events which may have played a role in swaying the vote in a particular direction. I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distingush these relational patterns when cognitive analysis was replaced by visual perception.
+# A visualisation of a century of Voting Bias
+
+This aim of this project is to create a visual representation of the public perspective of government based on how they have voted over the past century,using a presentation of known results, to see whether there was any noticeable correlation associated with historical events which may have played a role in swaying votes in a particular direction. I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distingush any relational patterns when cognitive analysis was replaced by visual perception.
 
 <hr>
 
@@ -42,7 +45,9 @@ Another feature idea
 
 ### Technologies Used
 
-[Favicon Generator](https://www.favicon-generator.org/) is the tool I used to create the icons for this project. Absolutely fabulous as it only took a miniute and I had all the icons and code supplied simply by providing an image to the genrator.
+[Favicon Generator](https://www.favicon-generator.org/) is the tool I used to create the favicons for this project. Absolutely fabulous as it only took a miniute and I had all the icons and html links supplied simply by providing an image to the genrator.
+
+In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by [IMGonline.com.ua](https://www.imgonline.com.ua/eng/combine-two-images-into-one.php)
 
 [File Type Converter](https://onlinetsvtools.com/convert-tsv-to-json)
 
