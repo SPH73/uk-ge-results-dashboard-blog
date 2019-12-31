@@ -52,7 +52,7 @@ Seat-change	0
 Votes	"865,707"
 Vote-share %	2.7
 Vote-share-change	1.1
-Party	Alliance Part
+Party	Alliance Party
 Seats	1
 Seat-change	1
 Votes	"134,115"
@@ -93,7 +93,7 @@ Seats	0
 Seat-change	0
 Votes	"10,006"
 Vote-share %	0.0
-Vote-share-change	
+Vote-share-change	0.0
 Party	Aontú
 Seats	0
 Seat-change	0
@@ -105,7 +105,7 @@ Seats	0
 Seat-change	0
 Votes	"9,739"
 Vote-share %	0.0
-Vote-share-change	
+Vote-share-change	0.0
 Party	Christian Peoples Alliance
 Seats	0
 Seat-change	0
@@ -118,12 +118,12 @@ Seat-change	0
 Votes	"3,295"
 Vote-share %	0.0
 Vote-share-change	0.0
-Party	
+Party	Animal Welfare Party
 Seats	0
 Seat-change	0
 Votes	"3,086"
 Vote-share %	0.0
-Vote-share-change	
+Vote-share-change	0.0
 Party	English Democrats
 Seats	0
 Seat-change	0
