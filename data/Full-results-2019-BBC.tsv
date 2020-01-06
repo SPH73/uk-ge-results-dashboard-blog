@@ -1,4 +1,4 @@
-Party	Seats	Seat-change	Votes	Vote-share %	Vote-share-change
+Party	Seats	SeatChange	Votes	VoteShare	Vote-share-change
 Conservative	365	47	"13,966,451"	43.6	1.2
 Labour	203	59	"10,295,912"	32.2	-7.8
 Scottish National Party	48	13	"1,242,380"	3.9	0.8
@@ -8,7 +8,7 @@ Sinn Féin	7	0	"181,853"	0.6	-0.2
 Plaid Cymru	4	0	"153,265"	0.5	0.0
 Social Democratic & Labour Party	2	2	"118,737"	0.4	0.1
 Green	1	0	"865,707"	2.7	1.1
-Alliance Part	1	1	"134,115"	0.4	0.2
+Alliance Party	1	1	"134,115"	0.4	0.2
 The Brexit Party	0	0	"644,257"	2.0	2.0
 Ulster Unionist Party	0	0	"93,123"	0.3	0.0
 The Yorkshire Party	0	0	"29,201"	0.1	0.0

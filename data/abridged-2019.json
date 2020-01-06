@@ -1,0 +1,97 @@
+[{
+    "party": "Cons",
+    "seats": 365,
+    "seatChange": 47,
+    "votes": 13966451,
+    "voteShare": 43.6,
+    "voteShareChange": 1.2
+  },
+  {
+    "party": "Lab",
+    "seats": 203,
+    "seatChange": 59,
+    "votes": 10295912,
+    "voteShare": 32.2,
+    "voteShareChange": -7.8
+  },
+  {
+    "party": "SNP",
+    "seats": 48,
+    "seatChange": 13,
+    "votes": 1242380,
+    "voteShare": 3.9,
+    "voteShareChange": 0.8
+  },
+  {
+    "party": "LibDem",
+    "seats": 1,
+    "seatChange": -1,
+    "votes": 3696419,
+    "voteShare": 11.5,
+    "voteShareChange": 4.2
+  },
+  {
+    "party": "DUP",
+    "seats": 8,
+    "seatChange": -2,
+    "votes": 244127,
+    "voteShare": 0.8,
+    "voteShareChange": -0.1
+  },
+  {
+    "party": "SF",
+    "seats": 7,
+    "seatChange": 0,
+    "votes": 181853,
+    "voteShare": 0.6,
+    "voteShareChange": -0.2
+  },
+  {
+    "party": "PC",
+    "Seats": 4,
+    "seatChange": 0,
+    "votes": 53265,
+    "voteShare": 0.5,
+    "voteShareChange": 0.0
+  },
+  {
+    "party": "SDLP",
+    "seats": 2,
+    "seatChange": 2,
+    "votes": 118737,
+    "voteShare": 0.4,
+    "voteShareChange": 0.1
+  },
+  {
+    "party": "Green",
+    "seats": 1,
+    "seatChange": 0,
+    "votes": 865707,
+    "voteShare": 2.7,
+    "voteShareChange": 1.1
+  },
+  {
+    "party": "Alliance",
+    "seats": 1,
+    "seatChange": 1,
+    "votes": 134115,
+    "voteShare": 0.4,
+    "voteShareChange": 0.2
+  },
+  {
+    "party": "Brexit",
+    "seats": 0,
+    "seatChange": 0,
+    "votes": 644257,
+    "voteShare": 2.0,
+    "voteShareChange": 2.0
+  },
+  {
+    "party": "Other",
+    "seats": 0,
+    "seatChange": -1,
+    "votes": 470842,
+    "voteShare": 1.3,
+    "voteShareChange": -1.1
+  }
+]
