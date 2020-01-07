@@ -37,7 +37,8 @@
   <!-- Internal Scripts -->
   <script src="static/js/compVotes.js"></script>
   <script src="static/js/compSeats.js"></script>
-  <script src="static/js/pie-2019.js"></script>
+  <script src="static/js/votes2019.js"></script>
+
 </head>
 
 <body>
@@ -81,7 +82,7 @@
   <!-- HEADING -->
   <div class="jumbotron text-center">
     <h1>Great Britain's General Election 2019</h1>
-    <h3>The last time Britain went to the polls in December was 90 years ago!</h3>
+    <h4>The last time Britain went to the polls in December was 90 years ago!</h4>
     <p class="secondary-text">Before 6am on the morning of the election, the 'Tories' already knew they had the majority
       vote. That's quite a remarkable position to start in. What do the results tell us?</p>
   </div>
@@ -95,11 +96,11 @@
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-6" id="pie-votes-2019">
-          <h3>How were the votes cast?</h3>
+        <div class="col-sm-4" id="votes-2019"><span>How were the votes cast?</span>
         </div>
-        <div class="col-sm-6" id="pie-seats-2019">
-          <h3>How have the seats in parliament been distributed?</h3>
+        <div class="col-sm-4" id="seats-2019"><span>How have the seats in parliament been distributed?</span>
+        </div>
+        <div class="col-sm-4" id="voteShare-2019"><span>Do the votes tally with the seats?</span>
         </div>
       </div>
     </div>
@@ -112,12 +113,12 @@
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col-12">
-          <h2>Looking back over the last century of election results...</h2>
+          <h3>Looking back over the last century of election results...</h3>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-12" id="compare-votes">
-          <h4>Votes Comparison</h4>
+          <span>Votes Comparison</span>
         </div>
   </section>
   <hr>
@@ -127,7 +128,7 @@
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-12" id="composite">
-          <h4>Seats Comparison</h4>
+          <span>Seats Comparison</span>
         </div>
       </div>
     </div>
