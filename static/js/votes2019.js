@@ -1,5 +1,5 @@
 queue()
-    .defer(d3.tsv, "data/seats-to-votes2019.tsv")
+    .defer(d3.tsv, "data/Full-results-2019-BBC.tsv")
     .await(makeGraphs)
 
 function makeGraphs(error, latestData) {
@@ -7,25 +7,19 @@ function makeGraphs(error, latestData) {
 
     let ndx = crossfilter(latestData);
 
-    // filter null values
-    let filteredData = latestData.filter(function (d) {
-        if (d.seats >= 1) {
-            return d.value;
-        }
-    })
     // parse data
     latestData.forEach(function (d) {
         d.party = d.party
         d.votes = +d.votes;
         d.seats = +d.seats;
-        d.votesShare = +d.votesShare
+        d.seatChange = +d.seatChange
+        d.voteShare = +d.voteShare
+        d.voteShareChange = +d.voteShareChange
     });
 
 
     show_votes(ndx)
     show_seats(ndx)
-
-    dc.renderAll();
 
 }
 
@@ -41,6 +35,8 @@ function show_votes(ndx) {
         .dimension(party_dim)
         .group(votes_per_party)
 
+
+    dc.renderAll();
 }
 
 function show_seats(ndx) {
@@ -50,7 +46,7 @@ function show_seats(ndx) {
     let seats_per_party = party_dim.group().reduceSum(dc.pluck("seats"));
 
 
-    dc.pieChart("#votes-2019")
+    dc.pieChart("#seats-2019")
         .height(340)
         .radius(150)
         .useViewBoxResizing(true)
@@ -59,5 +55,12 @@ function show_seats(ndx) {
         .group(seats_per_party)
 
 
+    dc.renderAll();
+}
 
+
+
+
+function resetChart() {
+    window.location.reload();
 }

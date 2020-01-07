@@ -34,6 +34,11 @@
   <script src="static/js/dc.min.js"></script>
   <script src="static/js/queue.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    src = "https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin = "anonymous"
+  </script>
   <!-- Internal Scripts -->
   <script src="static/js/compVotes.js"></script>
   <script src="static/js/compSeats.js"></script>
@@ -88,6 +93,8 @@
   </div>
   <!-- CHARTS -->
   <!-- 2019 Results -->
+  <script>
+  </script>
   <section>
     <div class="container-fluid">
       <div class="row text-center">
@@ -95,6 +102,8 @@
           <h2>How has the political landscape changed since 2017?</h2>
         </div>
       </div>
+      <!-- reset charts button -->
+      <button type="submit" onClick="resetChart()">Reset Charts</button>
       <div class="row text-center">
         <div class="col-sm-4" id="votes-2019"><span>How were the votes cast?</span>
         </div>
@@ -107,7 +116,7 @@
     <hr>
   </section>
 
-  <!-- Historical Results-->
+  <!-- Historical Results -->
   <!-- Votes -->
   <section>
     <div class="container-fluid">
