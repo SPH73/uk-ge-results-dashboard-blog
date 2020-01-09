@@ -78,7 +78,7 @@ function show_correlation(ndx) {
         console.log(bubble_group.all());
 
 
-        dc.bubbleChart("#seat-votes")
+        dc.bubbleChart("seat-votes")
             .width(1200)
             .height(500)
             .dimension(bubble_dim)
