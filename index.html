@@ -28,6 +28,7 @@
   <!-- Styling -->
   <link rel="stylesheet" href="static/css/bootstrap.min.css" />
   <link rel="stylesheet" href="static/css/dc.min.css" />
+  <link rel="stylesheet" href="static/css/style.css">
   <!-- External Scripts -->
   <script src="static/js/d3.min.js"></script>
   <script src="static/js/crossfilter.min.js"></script>
@@ -47,6 +48,14 @@
 </head>
 
 <body>
+  <div class="container-fluid alert">
+    <div class="row">
+      <div class="col text-center" style="margin-bottom: 0px">
+        <p class="alert"><span><strong>!Desktop provides a better experience!</strong></span>
+        </p>
+      </div>
+    </div>
+  </div>
   <!-- NAV -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="#">
@@ -60,78 +69,85 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">2019</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Historical</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sources</a>
         </li>
       </ul>
     </div>
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-      </div>
-    </li>
-    </ul>
   </nav>
 
   <!-- HEADING -->
   <div class="jumbotron text-center">
     <h1>Great Britain's General Election 2019</h1>
     <h4>The last time Britain went to the polls in December was 90 years ago!</h4>
-    <p class="secondary-text">Before 6am on the morning of the election, the 'Tories' already knew they had the majority
-      vote. That's quite a remarkable position to start in. What do the results tell us? Read on to draw your own
-      conclusion.</p>
+    <h5>Before 6am on the morning of the election, the 'Tories' already knew they had the majority
+      vote. That's quite a remarkable position to start in.</h5>
+    <p class="secondary-text">What do the results tell us? Examine the charts to draw your own conclusion.</p>
   </div>
   <!-- CHARTS -->
   <!-- 2019 Results -->
-  <script>
-  </script>
-  <section>
-    <div class="container-fluid">
+  <section class="latest">
+    <div class="container-fluid latest">
+      <!-- selector menu -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="button" id="select-menu"></div>
+          </div>
+          <!-- reset charts button -->
+          <div class="col-sm-6 text-right">
+            <button class="button btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
+          </div>
+        </div>
+      </div>
       <div class="row text-center">
         <div class="col-12">
           <h3>Let's take a look at the 2019 election results to see how the political landscape changed since 2017</h3>
         </div>
       </div>
-
-      <!-- selector menu -->
-      <div type="button" id="select-menu"></div>
       <div class="row text-center">
-        <div class="col-sm-5" id="votes-2019"><span>How were the votes cast?</span>
+        <div class="col-sm-4" id="votes-2019">
+          <h4><span>How were the votes cast?</span></h4>
+          <h6>Chart 1</h6>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-4" id="seats-2019">
+          <h4><span>What was the seat distribution?</span></h4>
+          <h6>Chart 2</h6>
+        </div>
+        <div class="col-sm-4">
           <h2><span>Article Heading</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit quasi earum ipsa qui ratione velit
             natus eaque, impedit quidem accusantium odit? Culpa, nobis ipsum?</p>
         </div>
-        <div class="col-sm-5" id="seats-2019"><span>How have the seats in parliament been distributed?</span>
-        </div>
-
       </div>
       <div class="row text-center">
-        <div class="col-12" id="seat-votes">
-          <span>Are all seats equal?</span>
+        <div class="col-sm-12 mt-3" id="seat-votes">
+          <h4><span>Not all votes are equal</span></h4>
+          <h6>Chart 3</h6>
         </div>
       </div>
-      <!-- reset charts button -->
-      <button type="submit" onClick="resetChart()">Reset Charts</button>
-      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <!-- reset charts button -->
+            <button class="button btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- Historical Results -->
   <!-- Votes -->
   <section>
-    <div class="container-fluid">
+    <div class="container-fluid historical">
       <div class="row text-center">
         <div class="col-12">
           <h3>Looking back over the last century of election results...</h3>
@@ -139,31 +155,49 @@
       </div>
       <div class="row text-center">
         <div class="col-12" id="compare-votes">
-          <span>Votes Comparison</span>
+          <h4><span>Votes Comparison</span></h4>
+          <h6>Chart 4</h6>
         </div>
   </section>
-  <hr>
 
   <!-- Seats -->
   <section>
-    <div class="container-fluid text-center">
+    <div class="container-fluid historical text-center">
       <div class="row">
         <div class="col-12" id="composite">
-          <span>Seats Comparison</span>
+          <h4><span>Seats Comparison</span></h4>
+          <h6>Chart 5</h6>
         </div>
       </div>
     </div>
 
   </section>
-  <hr>
 
-  <!-- RESOURCES -->
-  <section>
-    <div class="container-fluid">
+  <!-- SUMMARY -->
+  <section class="summary">
+    <div class="container-fluid summary">
       <div class="row">
         <div class="col-12">
-          <h6>Here is a list of resources used for this project as well as links to additional resources for further
-            interest</h6>
+          <h6>In summary...</h6>
+          <p>Due to the "first past the post" style of voting, we note that it is not likely to get an distribution of
+            seats to votes.</p>
+          <p>Historically, we can see the the</p>
+          <ul>Glossary
+            <li>Voting System</li>
+            <li>Houses ofParliament</li>
+            <li>House of Commons</li>
+            <li>House of Lords</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RESOURCES -->
+  <section class="resources">
+    <div class="container-fluid resources">
+      <div class="row">
+        <div class="col-12">
+          <h6>Data Sources</h6>
           <ul>
             <li>Data Source <a href="#"></a></li>
             <li>Data Source <a href="#"></a></li>

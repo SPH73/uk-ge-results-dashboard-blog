@@ -1,27 +1,27 @@
 party	seats	seatChange	votes	voteShare	voteShareChange
-Conservative	365	47	"13966451"	43.6	1.2
-Labour	203	59	"10295912"	32.2	-7.8
-Scottish National Party	48	13	"1242380"	3.9	0.8
-Liberal Democrat	11	-1	"3696419"	11.5	4.2
-Democratic Unionist Party	8	-2	"244127"	0.8	-0.1
-Sinn Féin	7	0	"181853"	0.6	-0.2
-Plaid Cymru	4	0	"153265"	0.5	0.0
-Social Democratic & Labour Party	2	2	"118737"	0.4	0.1
+Cons	365	47	"13966451"	43.6	1.2
+Lab	203	59	"10295912"	32.2	-7.8
+SNP	48	13	"1242380"	3.9	0.8
+LibDem	11	-1	"3696419"	11.5	4.2
+DUP	8	-2	"244127"	0.8	-0.1
+SF	7	0	"181853"	0.6	-0.2
+PC	4	0	"153265"	0.5	0.0
+SDLP	2	2	"118737"	0.4	0.1
 Green	1	0	"865707"	2.7	1.1
-Alliance Party	1	1	"134115"	0.4	0.2
-The Brexit Party	0	0	"644257"	2.0	2.0
-Ulster Unionist Party	0	0	"93123"	0.3	0.0
-The Yorkshire Party	0	0	"29201"	0.1	0.0
+Alliance	1	1	"134115"	0.4	0.2
+Brexit	0	0	"644257"	2.0	2.0
+UUP	0	0	"93123"	0.3	0.0
+YP	0	0	"29201"	0.1	0.0
 UKIP	0	0	"22817"	0.1	-1.8
-Liberal Party	0	0	"10876"	0.0	0.0
-Independent Group for Change	0	0	"10006"	0.0	0.0
+Lib	0	0	"10876"	0.0	0.0
+IGC	0	0	"10006"	0.0	0.0
 Aontú	0	0	"9814"	0.0	0.0
-Monster Raving Loony Party	0	0	"9739"	0.0	0.0
-Christian Peoples Alliance	0	0	"6486"	0.0	0.0
-Social Democratic Party	0	0	"3295"	0.0	0.0
-Animal Welfare Party	0	0	"3086"	0.0	0.0
-English Democrats	0	0	"1987"	0.0	0.0
-Libertarian	0	0	"1780"	0.0	0.0
-Workers Revolutionary Party	0	0	"524"	0.0	0.0
-Advance Together	0	0	"351"	0.0	0.0
+MRLP	0	0	"9739"	0.0	0.0
+CPA	0	0	"6486"	0.0	0.0
+SDP	0	0	"3295"	0.0	0.0
+AWP	0	0	"3086"	0.0	0.0
+ED	0	0	"1987"	0.0	0.0
+Libert	0	0	"1780"	0.0	0.0
+WRP	0	0	"524"	0.0	0.0
+AT	0	0	"351"	0.0	0.0
 Others	0	-1	"267757"	0.8	0.7
