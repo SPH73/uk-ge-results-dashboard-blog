@@ -31,6 +31,9 @@ function show_correlation(ndx) {
     })
     let bubble_group = bubble_dim.group();
 
+    console.log(bubble_group.all());
+
+
     dc.bubbleChart("#seat-votes")
         .width(1200)
         .height(500)
@@ -39,7 +42,7 @@ function show_correlation(ndx) {
         .yAxisLabel("Seats")
         .xAxisLabel("Votes")
         .y(d3.scale.linear().domain([0, 400]))
-        .x(d3.scale.linear().domain([0, 14000]))
+        .x(d3.scale.linear().domain([0, 1400000]))
         .radiusValueAccessor(function (d) {
             return d.value
         })
