@@ -69,6 +69,15 @@ section .latest {
 CHARTS
  */
 
+.dc-chart .axis .grid-line,
+.dc-chart .axis .grid-line line,
+.dc-chart .grid-line,
+.dc-chart .grid-line line {
+    stroke: black;
+    opacity: 0.5;
+    shape-rendering: crispEdges;
+}
+
 /* Chart 3 */
 
 #seat-votes text {
@@ -79,14 +88,14 @@ CHARTS
 
 /* Chart 4 */
 
-#compare-votes .axis.x text {
+#votes .axis.x text {
     transform: rotate(-45deg) translate(-20px, 0px);
     font-size: 0.8em;
     font-weight: 300;
 
 }
 
-#compare-votes .x-axis-label.x-label {
+#votes .x-axis-label.x-label {
     font-size: 0.1em;
     font-weight: 100;
 }
