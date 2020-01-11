@@ -28,7 +28,7 @@ function makeGraphs(error, latestData) {
 
 function show_party_selector(ndx) {
 
-    let dim = ndx.dimension(dc.pluck('party'));
+    let dim = ndx.dimension(dc.pluck('range'));
     let group = dim.group();
 
     dc.selectMenu("#select-menu")
@@ -45,7 +45,7 @@ function show_votes(ndx) {
         .height(340)
         .radius(150)
         .useViewBoxResizing(true)
-        .transitionDuration(1000)
+        .transitionDuration(1500)
         .dimension(party_dim)
         .group(votes_per_party)
 
@@ -62,7 +62,7 @@ function show_seats(ndx) {
         .height(340)
         .radius(150)
         .useViewBoxResizing(true)
-        .transitionDuration(1000)
+        .transitionDuration(1500)
         .dimension(party_dim)
         .group(seats_per_party)
 
@@ -79,25 +79,23 @@ function show_correlation(ndx) {
 
 
     dc.bubbleChart("#seat-votes")
-        .width(1200)
-        .height(500)
+        .width(500)
+        .height(250)
         .useViewBoxResizing(true)
         .margins({
             top: 10,
-            right: 50,
-            bottom: 60,
-            left: 50
+            right: 30,
+            bottom: 30,
+            left: 30
         })
         .dimension(bubble_dim)
         .group(bubble_group)
-        .yAxisLabel("Votes")
-        .xAxisLabel("Seats")
-        .y(d3.scale.linear().domain([0, 400]))
+        .y(d3.scale.linear().domain([0, 365]))
         .x(d3.scale.linear().domain([0, 14000000]))
         .radiusValueAccessor(function (d) {
             return d.value
         })
-        .r(d3.scale.linear().domain([0, 20]))
+        .r(d3.scale.log([0, 20]))
         .keyAccessor(function (d) {
             return d.key[1];
         })
@@ -108,10 +106,14 @@ function show_correlation(ndx) {
         .colorAccessor(function (d) {
             return d.key;
         })
-        .colors(d3.scale.category20())
+        .colors(d3.scale.category20b())
+        .yAxisLabel("Seats")
+        .xAxisLabel("Votes")
+        .renderLabel(false)
         .title(function (d) {
-            return (d.key[0] + " received " + d.key[1] + " votes and " + d.key[2] + " seats")
+            return (d.key[0] + " won " + d.key[1].toString() + " votes and " + d.key[2] + " seats")
         })
+        .transitionDuration(500)
 
 }
 
