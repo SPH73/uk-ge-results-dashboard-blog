@@ -19,6 +19,23 @@ body {
     padding: 0.5rem;
 }
 
+.secondary-text {
+    font-size: 1.2em
+}
+
+.btn .button {
+    border-radius: 5px;
+    border: solid 1px;
+    box-shadow: 5px;
+    padding: 0.25rem;
+    color: #777;
+}
+
+
+/* 
+SMALL/MOBILE DEVICE ALERT
+ */
+
 .alert {
     border-radius: 0;
     background-color: silver;
@@ -26,20 +43,17 @@ body {
     padding: 0
 }
 
+
+/* 
+SECTIONS
+ */
+
 .jumbotron {
     margin: 0;
 }
 
-.btn .button {
-    border-radius: 5px;
-    border: solid 1px;
-    background-color: #fff;
-    box-shadow: 5px;
-    padding: 0.25rem;
-}
-
-.secondary-text {
-    font-size: 1.2em
+h5 .tip {
+    text-align: center;
 }
 
 section .historical {
@@ -49,4 +63,45 @@ section .historical {
 
 section .latest {
     background-color: silver;
+}
+
+/* 
+CHARTS
+ */
+
+/* Chart 3 */
+
+#seat-votes text {
+    font-size: 0.5em;
+    font-weight: 300;
+
+}
+
+/* Chart 4 */
+
+#compare-votes .axis.x text {
+    transform: rotate(-45deg) translate(-20px, 0px);
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+#compare-votes .x-axis-label.x-label {
+    font-size: 0.1em;
+    font-weight: 100;
+}
+
+/* Chart 5 */
+
+#composite .y-axis-label.y-label {
+
+    font-size: 1em;
+    font-weight: 100;
+    transform: translate(50px, 149px) rotate(0);
+}
+
+#composite .x-axis-label.x-label {
+
+    font-size: 0.5em;
+    font-weight: 100;
 }
