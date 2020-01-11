@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap');
+
 /*
 WHITE SPACES AND PAGE STYLING
 */
@@ -9,6 +11,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container-fluid {
@@ -52,31 +55,24 @@ SECTIONS
     margin: 0;
 }
 
-h5 .tip {
-    text-align: center;
-}
-
-section .historical {
-    background-color: lightgray;
-
-}
-
-section .latest {
+#latest,
+#about {
     background-color: silver;
+    color: #777;
+}
+
+#historical {
+    background-color: lightgray;
+}
+
+#summary {
+    background-color: darkgrey;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* 
 CHARTS
  */
-
-.dc-chart .axis .grid-line,
-.dc-chart .axis .grid-line line,
-.dc-chart .grid-line,
-.dc-chart .grid-line line {
-    stroke: black;
-    opacity: 0.5;
-    shape-rendering: crispEdges;
-}
 
 /* Chart 3 */
 
@@ -113,4 +109,17 @@ CHARTS
 
     font-size: 0.5em;
     font-weight: 100;
+}
+
+.dc-chart .axis .grid-line,
+.dc-chart .axis .grid-line line,
+.dc-chart .grid-line,
+.dc-chart .grid-line line {
+    stroke: black;
+    opacity: 0.5;
+    shape-rendering: crispEdges;
+}
+
+footer {
+    background-color: dimgray;
 }
