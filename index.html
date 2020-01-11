@@ -34,7 +34,6 @@
   <script src="static/js/crossfilter.min.js"></script>
   <script src="static/js/dc.min.js"></script>
   <script src="static/js/queue.min.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script>
     src = "https://code.jquery.com/jquery-3.4.1.min.js"
     integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -44,20 +43,19 @@
   <script src="static/js/compVotes.js"></script>
   <script src="static/js/compSeats.js"></script>
   <script src="static/js/votes2019.js"></script>
-
 </head>
 
 <body>
   <div class="container-fluid alert">
-    <div class="row">
-      <div class="col text-center" style="margin-bottom: 0px">
+    <div class="row d-lg-none">
+      <div class="col-sm-12 text-center" style="margin-bottom: 0px">
         <p class="alert"><span><strong>!Desktop provides a better experience!</strong></span>
         </p>
       </div>
     </div>
   </div>
   <!-- NAV -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="#">
       <img src="assets/img/union-jack.jpg" alt="Union Jack" style="width:40px;">
     </a>
@@ -69,48 +67,48 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">2019</a>
+          <a class="nav-link" href="#latest">2019</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Historical</a>
+          <a class="nav-link" href="#historical">Historical</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Summary</a>
+          <a class="nav-link" href="#summary">Summary</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sources</a>
+          <a class="nav-link" href="#resources">Sources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- HEADING -->
-  <div class="jumbotron text-center">
+  <div id="heading" class="jumbotron text-center">
     <h1>Great Britain's General Election 2019</h1>
     <h4>The last time Britain went to the polls in December was 90 years ago!</h4>
     <h5>Before 6am on the morning of the election, the 'Tories' already knew they had the majority
       vote. That's quite a remarkable position to start in.</h5>
     <p class="secondary-text">What do the results tell us? Examine the charts to draw your own conclusion.</p>
   </div>
+
   <!-- CHARTS -->
   <!-- 2019 Results -->
   <section class="latest">
     <div class="container-fluid latest">
-      <!-- selector menu -->
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <div class="button" id="select-menu"></div>
-          </div>
           <!-- reset charts button -->
-          <div class="col-sm-6 text-right">
+          <div class="col-sm-12 text-center">
             <button class="button btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
           </div>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-12">
-          <h3>Let's take a look at the 2019 election results to see how the political landscape changed since 2017</h3>
+          <h3>The 2019 election has changed the political landscape</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -122,14 +120,17 @@
           <h4><span>What was the seat distribution?</span></h4>
           <h6>Chart 2</h6>
         </div>
-        <div class="col-sm-4">
-          <h2><span>Article Heading</span></h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit quasi earum ipsa qui ratione velit
-            natus eaque, impedit quidem accusantium odit? Culpa, nobis ipsum?</p>
+        <div class="col-sm-4 text-justify comment my-auto">
+          <h5 style="text-align: center;" class="tip">Using the Charts</h5>
+          <p>To make observations on the 2019 election results, use the select menu.</p>
+          <p>Select the range you are interested in and the charts will adjust to exclude the other data.</p>
+          <p>For example, if you are interested in comparing the votes of the parties that didn't win any seats select
+            "<1".</p> <!-- selector menu -->
+              <div id="select-menu"></div>
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-sm-12 mt-3" id="seat-votes">
+        <div class="col-sm-12 mt-2" id="seat-votes">
           <h4><span>Not all votes are equal</span></h4>
           <h6>Chart 3</h6>
         </div>
@@ -144,9 +145,9 @@
       </div>
   </section>
 
-  <!-- Historical Results -->
+  <!-- Historical Charts -->
   <!-- Votes -->
-  <section>
+  <section id="historical">
     <div class="container-fluid historical">
       <div class="row text-center">
         <div class="col-12">
@@ -158,34 +159,50 @@
           <h4><span>Votes Comparison</span></h4>
           <h6>Chart 4</h6>
         </div>
-  </section>
-
-  <!-- Seats -->
-  <section>
-    <div class="container-fluid historical text-center">
-      <div class="row">
-        <div class="col-12" id="composite">
-          <h4><span>Seats Comparison</span></h4>
-          <h6>Chart 5</h6>
+        <!-- Seats -->
+        <div class="container-fluid historical text-center">
+          <div class="row">
+            <div class="col-12" id="composite">
+              <h4><span>Seats Comparison</span></h4>
+              <h6>Chart 5</h6>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
   </section>
 
   <!-- SUMMARY -->
-  <section class="summary">
+  <section id="summary">
     <div class="container-fluid summary">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-justify">
           <h6>In summary...</h6>
-          <p>Due to the "first past the post" style of voting, we note that it is not likely to get an distribution of
-            seats to votes.</p>
-          <p>Historically, we can see the the</p>
+          <p>The UK's "first past the post" voting system, means that the parties with the most votes may not win the
+            most seats and thus some may say that a "fair" distribution of seats is unlikely in any election, while
+            others may debate that since the candidates with the most votes in their constiutency wins a seat in the
+            House Of Commons, it is fair on a regional level.</p>
+          <p>In Chart 1-3 we can see this clearly where there are a number of parties with a lower ratio of votes
+            to seats and vice versa but most notable is the Scottish National Party having less than half of the number
+            of votes that the Liberal Democrats but 4 times the amount of seats and the Democraot Unionist Party while
+            having a quater of the amount of votes as the Liberal Democrats they hold only a few less seats. The
+            Brexit Party, having gained an overall 644k votes without a seat comapred to The Alliance Party's 134k
+            votes and 1 seat. Again, with only 115k votes the SDLP gained 2 seats while Green gained only 1 with 865K
+            votes. This could imply a much larger footprint for the aforementioned parties.</p>
+          <p>The next election may prove to make unusual history if we see these new parties gain traction with their
+            campaigning. The pollsters have suggested that the "conservative strength was pointed to
+            'leave-supporters'". Electon survey data suggested similar turnout by age-group.</p>
+          <p>Historically we can see in Charts4-5 that not much changed over the past century with the power alternating
+            back and forth between
+            Conservative and Labour governments, with results goimg from one extreme to the other in their differences.
+          </p>
+          <p>During the period of 2001-2015 there was a much lower turn-out of voters and the elections were between 4
+            and 5 years apart.</p>
           <ul>Glossary
             <li>Voting System</li>
+            <p></p>
             <li>Houses ofParliament</li>
+            <p></p>
             <li>House of Commons</li>
+            <p></p>
             <li>House of Lords</li>
           </ul>
         </div>
@@ -196,17 +213,37 @@
   <section class="resources">
     <div class="container-fluid resources">
       <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12">
           <h6>Data Sources</h6>
           <ul>
-            <li>Data Source <a href="#"></a></li>
-            <li>Data Source <a href="#"></a></li>
-            <li>Data Source <a href="#"></a></li>
-            <li>Data Source <a href="#"></a></li>
+            <li>Election - Political Science <a href="https://www.britannica.com/topic/election-political-science"></a>
+            </li>
+            <li>A guide to the party political system in Britain<a
+                href="https://about-britain.com/institutions/political-parties.htm"></a></li>
+            <li>UK Election statistics 1818-2019<a
+                href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529"></a></li>
+            <li>What is politics?<a href="https://www.freewebs.com/leeyk/Political%20Science%20II/Chapter%201.pdf"></a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+  </section>
+  <section id="About">
+    <div class="col-sm-4 text-justify comment">
+      <h5 class="text-center><span">Comment from the Author with one raised eyebrow</span></h5>
+      <p>There are many new politial parties on the block and some could be accused of making a mockery of the space
+        governing the country. One cannot help but wonder how Monster Raving Looney Party secured 200% more votes than
+        the Animal Welfare Party. In spite of the fact that the oldest standing parties are still winning the power
+        struggle, I think
+        it begs the question - What is politics coming to?</p>
+      <p>England has the oldest parliament in the world, having met for the first time in the Palace of Westminster,
+        or the Houses of Parliament as it's called today, in 1265.</p>
+      <p>Two parties were formed as a result of the constitutional crisis
+        between 1678 and 1681, known as the Exclusion Crisis, namely 'Whigs' and 'Tories' and an interesting fact to
+        note is that the descendants of these parties formed the coalition government between 2010 and 2015. I
+        wonder what they would have had to say?
+      </p>
   </section>
 
   <footer>
