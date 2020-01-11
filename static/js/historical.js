@@ -12,15 +12,23 @@ function makeGraphs(error, historicalData) {
         d.yearS = parseYear(d.yearS);
     });
 
+    show_menu_selector(ndx)
     show_votes_comparison(ndx);
     show_seats_comparison(ndx)
-
 
     dc.renderAll();
 }
 
-function show_votes_comparison(ndx) {
+function show_menu_selector(ndx) {
+    let dim = ndx.dimension(dc.pluck("party"));
+    let group = dim.group();
 
+    dc.selectMenu("#select-menu")
+        .dimension(dim)
+        .group(group);
+}
+
+function show_votes_comparison(ndx) {
 
     let year_dim = ndx.dimension(dc.pluck("yearV"));
 
@@ -59,7 +67,7 @@ function show_votes_comparison(ndx) {
         .x(d3.scale.ordinal())
         .colors(d3.scale.category10())
         .xUnits(dc.units.ordinal)
-        .xAxisLabel("Votes (Millions) per year")
+        .xAxisLabel("Votes (Millions) Per Party")
         .legend(dc.legend().x(0).y(10).itemHeight(10).gap(5))
         .margins({
             top: 10,
@@ -67,11 +75,9 @@ function show_votes_comparison(ndx) {
             bottom: 70,
             left: 100
         })
-
 }
 
 function show_seats_comparison(ndx) {
-
 
     let year_dim = ndx.dimension(dc.pluck("yearS"));
 
@@ -133,5 +139,4 @@ function show_seats_comparison(ndx) {
             .colors('#0087dc')
             .group(con2_seats, 'Conservative')
         ]);
-
 }

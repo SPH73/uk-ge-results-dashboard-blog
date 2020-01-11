@@ -17,7 +17,7 @@ function makeGraphs(error, latestData) {
         d.voteShareChange = +d.voteShareChange
     });
 
-    show_party_selector(ndx)
+    show_range_selector(ndx)
     show_votes(ndx)
     show_seats(ndx)
     show_correlation(ndx)
@@ -26,12 +26,12 @@ function makeGraphs(error, latestData) {
 
 }
 
-function show_party_selector(ndx) {
+function show_range_selector(ndx) {
 
     let dim = ndx.dimension(dc.pluck('range'));
     let group = dim.group();
 
-    dc.selectMenu("#select-menu")
+    dc.selectMenu("#range-menu")
         .dimension(dim)
         .group(group);
 }
