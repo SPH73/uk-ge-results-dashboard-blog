@@ -10,7 +10,7 @@ function makeGraphs(error, seatsData) {
     let parseYear = d3.time.format("%Y-%m").parse;
 
     seatsData.forEach(function (d) {
-        d.Year = parseYear(d.Year);
+        d.year = parseYear(d.year);
     });
 
     show_seats_comparison(ndx);
@@ -20,15 +20,15 @@ function makeGraphs(error, seatsData) {
 function show_seats_comparison(ndx) {
 
 
-    let year_dim = ndx.dimension(dc.pluck("Year"));
+    let year_dim = ndx.dimension(dc.pluck("year"));
 
-    let minYear = year_dim.bottom(1)[0].Year;
-    let maxYear = year_dim.top(1)[0].Year;
+    let minYear = year_dim.bottom(1)[0].year;
+    let maxYear = year_dim.top(1)[0].year;
 
     function seats_per_year(party) {
         return function (d) {
-            if (d.Party === party) {
-                return +d.Seats;
+            if (d.party === party) {
+                return +d.seats;
             } else {
                 return 0;
             }
@@ -47,25 +47,25 @@ function show_seats_comparison(ndx) {
 
     let compositeChart = dc.compositeChart("#composite");
     compositeChart
-        .width(1200)
+        .width(1150)
         .height(500)
         .useViewBoxResizing(true)
         .dimension(year_dim)
-        .legend(dc.legend().x(80).y(10).itemHeight(15).gap(5))
+        .legend(dc.legend().x(0).y(10).itemHeight(10).gap(5))
         .margins({
             top: 10,
             right: 50,
             bottom: 50,
-            left: 50
+            left: 100
         })
         .brushOn(false)
         .x(d3.time.scale().domain([minYear, maxYear]))
-        .yAxisLabel("Total No. Seats gained")
+        .yAxisLabel("Seats")
         .xAxisLabel("Election Year")
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)
-            .colors('purple')
+            .colors('#777777')
             .group(other_seats, 'Other'),
             dc.lineChart(compositeChart)
             .colors('#3F8428')

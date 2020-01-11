@@ -11,12 +11,12 @@ function makeGraphs(error, votesData) {
 }
 
 function show_votes_comparison_two(ndx) {
-    let year_dim = ndx.dimension(dc.pluck("Year"));
+    let year_dim = ndx.dimension(dc.pluck("year"));
 
     function votes_per_year(party) {
         return function (d) {
-            if (d.Party === party) {
-                return +d.Votes;
+            if (d.party === party) {
+                return +d.votes;
             } else {
                 return 0;
             }
@@ -38,12 +38,6 @@ function show_votes_comparison_two(ndx) {
     stackedChart
         .width(1150)
         .height(500)
-        .margins({
-            top: 10,
-            right: 50,
-            bottom: 50,
-            left: 50
-        })
         .useViewBoxResizing(true)
         .dimension(year_dim)
         .group(votes_per_year_others, "All Other")
@@ -52,16 +46,15 @@ function show_votes_comparison_two(ndx) {
         .stack(votes_per_year_LAB, "Labour")
         .stack(votes_per_year_CON2, "Conservative")
         .x(d3.scale.ordinal())
+        .colors(d3.scale.category10())
         .xUnits(dc.units.ordinal)
-        .xAxisLabel("Votes in Millions per party per year")
-        .legend(
-            dc
-            .legend()
-            .x(60)
-            .y(0)
-            .itemHeight(15)
-            .gap(5)
-        );
-
+        .xAxisLabel("Votes (Millions) per year")
+        .legend(dc.legend().x(0).y(10).itemHeight(10).gap(5))
+        .margins({
+            top: 10,
+            right: 50,
+            bottom: 70,
+            left: 100
+        })
     dc.renderAll();
 }
