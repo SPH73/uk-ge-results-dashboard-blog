@@ -104,14 +104,27 @@
       <div class="container-fluid">
         <!-- Pie Chart-votes -->
         <div class="row chart">
-          <div class="col-sm-4 text-center my-auto" id="votes-2019">
+          <div class="col-sm-6 text-center my-auto" id="votes-2019">
             <h4>How were the votes cast?</h4>
             <h6>Chart 1</h6>
           </div>
           <!-- Pie Chart-seats -->
-          <div class="col-sm-4 text-center my-auto" id="seats-2019">
+          <div class="col-sm-6 text-center my-auto" id="seats-2019">
             <h4>What was the seat distribution?</h4>
             <h6>Chart 2</h6>
+          </div>
+        </div>
+        <!-- reset charts button -->
+        <div class="row button">
+          <div class="col-sm-12 text-center">
+            <button class="button btn btn-warning" onClick="resetChart()">Reset Charts</button>
+          </div>
+        </div>
+        <!-- Bubble Chart -->
+        <div class="row chart">
+          <div class="col-sm-8 text-center my-auto" id="seat-votes">
+            <h4>Not all votes are equal</h4>
+            <h6>Chart 3</h6>
           </div>
           <!-- How to use the select menu -->
           <div class="col-sm-4 text-justify my-auto">
@@ -126,20 +139,7 @@
               <div id="range-menu" class="col-12 text-center"></div>
             </div>
           </div>
-        </div>
 
-        <!-- reset charts button -->
-        <div class="row button">
-          <div class="col-sm-12 text-center">
-            <button class="button btn btn-warning" onClick="resetChart()">Reset Charts</button>
-          </div>
-        </div>
-        <!-- Bubble Chart -->
-        <div class="row chart">
-          <div class="col-sm-12 text-center my-auto" id="seat-votes">
-            <h4>Not all votes are equal</h4>
-            <h6>Chart 3</h6>
-          </div>
         </div>
       </div>
     </div>
