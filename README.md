@@ -1,10 +1,6 @@
-[My data source](https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529#fullreport)
-[Supporting documents](http://researchbriefings.files.parliament.uk/documents/CBP-7529/CBP-7529.Download.xlsx)
-[Pollmaker](https://www.poll-maker.com/)
+## Milestone Project 2
 
-# Milestone Project 2
-
-# A visualisation of a century of Voting Bias
+# A century of Great Britain's Voting Bias
 
 This aim of this project is to create a visual representation of the public perspective of government based on how they have voted over the past century,using a presentation of known results, to see whether there was any noticeable correlation associated with historical events which may have played a role in swaying votes in a particular direction. I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distingush any relational patterns when cognitive analysis was replaced by visual perception.
 
