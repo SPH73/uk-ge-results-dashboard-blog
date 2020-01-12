@@ -42,8 +42,8 @@ function show_votes(ndx) {
     let votes_per_party = party_dim.group().reduceSum(dc.pluck("votes"));
 
     dc.pieChart("#votes-2019")
-        .height(340)
-        .radius(150)
+        .height(200)
+        .radius(200)
         .useViewBoxResizing(true)
         .transitionDuration(1500)
         .dimension(party_dim)
@@ -59,8 +59,8 @@ function show_seats(ndx) {
 
 
     dc.pieChart("#seats-2019")
-        .height(340)
-        .radius(150)
+        .height(200)
+        .radius(200)
         .useViewBoxResizing(true)
         .transitionDuration(1500)
         .dimension(party_dim)
@@ -79,8 +79,8 @@ function show_correlation(ndx) {
 
 
     dc.bubbleChart("#seat-votes")
-        .width(700)
-        .height(400)
+        .width(500)
+        .height(250)
         .useViewBoxResizing(true)
         .margins({
             top: 10,

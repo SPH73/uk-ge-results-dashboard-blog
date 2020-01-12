@@ -16,7 +16,7 @@ body {
 
 
 div {
-    padding: 0.5rem;
+    padding: 0.2rem;
 
 }
 
@@ -63,8 +63,8 @@ SECTIONS
     color: #777;
 }
 
-#about .about p {
-    padding-top: 1em;
+.about p {
+    padding-top: 0.5em;
     text-align: justify;
 }
 

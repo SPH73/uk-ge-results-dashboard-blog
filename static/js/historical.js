@@ -55,7 +55,7 @@ function show_votes_comparison(ndx) {
     let stackedChart = dc.barChart("#votes");
 
     stackedChart
-        .width(1000)
+        .width(700)
         .height(350)
         .useViewBoxResizing(true)
         .dimension(year_dim)
@@ -106,7 +106,7 @@ function show_seats_comparison(ndx) {
 
     let compositeChart = dc.compositeChart("#composite");
     compositeChart
-        .width(1000)
+        .width(700)
         .height(350)
         .useViewBoxResizing(true)
         .dimension(year_dim)

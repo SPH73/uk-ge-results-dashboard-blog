@@ -127,18 +127,19 @@
         </div>
         <!-- How to use the select menu -->
         <div class="col-sm-4 text-justify my-auto">
+          <!-- selector menu -->
+          <div class="row menu">
+            <div id="range-menu" class="col-12 text-center"></div>
+          </div>
+
           <h5 style="text-align: center;">Using the Charts</h5>
           <p>To view smaller sets of data in the charts, use the select menu.</p>
           <p>Select the range you are interested in and the charts will adjust to exclude the other data.</p>
           <p>For example, in the 2019 Charts, select the appropriate range, or in the Historical Charts you can
             isolate
             an individual party if you wish to make a comparison of the amount of seats to votes.</p>
-          <!-- selector menu -->
-          <div class="row menu">
-            <div id="range-menu" class="col-12 text-center"></div>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -152,33 +153,31 @@
         <h3>Looking back over the last century of election results...</h3>
       </div>
     </div>
-
-    <!-- Stacked Chart - votes comparison -->
-    <div class="row chart">
-      <div class="col-12 text-center" id="votes">
-        <h4>Votes Comparison</h4>
-        <h6>Chart 4</h6>
+    <div class="container-fluid">
+      <!-- selector menu -->
+      <div class="row menu">
+        <div class="col-12 text-center" id="select-menu"></div>
       </div>
-    </div>
+      <div class="row chart">
 
-    <!-- selector menu -->
-    <div class="row menu">
-      <div class="col-12 text-center" id="select-menu"></div>
-    </div>
+        <!-- Stacked Chart - votes comparison -->
+        <div class="col-lg-6 col-sm-12 text-center" id="votes">
+          <h4>Votes Comparison</h4>
+          <h6>Chart 4</h6>
+        </div>
 
-    <!-- reset charts button -->
-    <div class="row button">
-      <div class="col-sm-12 text-center">
-        <button class="btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
+        <!-- Composite Chart - seats comparison -->
+        <div class="col-lg-6 col-sm-12 text-center" id="composite">
+          <h4>Seats Comparison</h4>
+          <h6>Chart 5</h6>
+        </div>
       </div>
-    </div>
 
-    <!-- Composite Chart - seats comparison -->
-
-    <div class="row chart">
-      <div class="col-12 text-center" id="composite">
-        <h4>Seats Comparison</h4>
-        <h6>Chart 5</h6>
+      <!-- reset charts button -->
+      <div class="row button">
+        <div class="col-12 text-center">
+          <button class="btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
+        </div>
       </div>
     </div>
   </section>
@@ -251,7 +250,6 @@
       </div>
     </div>
 
-
     <!-- Profile Image -->
     <div class="container">
       <div class="row image">
@@ -294,7 +292,7 @@
             than
             the Animal Welfare Party. In spite of the fact that the oldest standing parties are still winning the
             power
-            struggle, I think it begs the question - What is politics coming to?
+            struggle, I think it begs the question - "What is politics coming to?"
           </p>
           <p>
             England has the oldest parliament in the world, having met for the first time in the Palace of
