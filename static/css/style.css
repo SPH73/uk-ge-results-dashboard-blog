@@ -14,28 +14,28 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.container-fluid {
-    padding: 0.75rem;
+
+div {
+    padding: 0.5rem;
+
 }
 
 .secondary-text {
     font-size: 1.2em
 }
 
+
 /* 
 BUTTONS 
 */
 
-/* Refresh */
+/* Refresh Back to top */
 .btn .button {
     border-radius: 5px;
     border: solid 1px;
     box-shadow: 5px;
     padding: 0.25rem;
-    color: #777;
 }
-
-/* Back To Top */
 
 /* 
 SMALL/MOBILE DEVICE ALERT
@@ -48,19 +48,24 @@ SMALL/MOBILE DEVICE ALERT
     padding: 0
 }
 
-
 /* 
 SECTIONS
  */
 
 .jumbotron {
     margin: 0;
+
 }
 
 #latest,
 #about {
     background-color: silver;
     color: #777;
+}
+
+#about .about p {
+    padding-top: 1em;
+    text-align: justify;
 }
 
 #historical {
@@ -73,16 +78,27 @@ SECTIONS
     color: rgba(255, 255, 255, 0.75);
 }
 
+÷
 /* 
 CHARTS
  */
 
 /* Chart 3 */
 
-#seat-votes text {
+/* #seat-votes text {
     font-size: 0.5em;
     font-weight: 300;
 
+} */
+
+#seat-votes .x-axis-label.x-label {
+    font-size: 0.1em;
+    font-weight: 100;
+}
+
+#seat-votes .y-axis-label.y-label {
+    /* font-size: 0.1em; */
+    font-weight: 100;
 }
 
 /* Chart 4 */
@@ -95,21 +111,19 @@ CHARTS
 }
 
 #votes .x-axis-label.x-label {
-    font-size: 0.1em;
+    /* font-size: 0.1em; */
     font-weight: 100;
 }
 
 /* Chart 5 */
 
 #composite .y-axis-label.y-label {
-
-    font-size: 1em;
+    /* font-size: 1em; */
     font-weight: 100;
     transform: translate(50px, 149px) rotate(0);
 }
 
 #composite .x-axis-label.x-label {
-
     font-size: 0.5em;
     font-weight: 100;
 }
