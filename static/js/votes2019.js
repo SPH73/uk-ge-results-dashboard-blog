@@ -79,7 +79,7 @@ function show_correlation(ndx) {
 
 
     dc.bubbleChart("#seat-votes")
-        .width(500)
+        .width(1000)
         .height(250)
         .useViewBoxResizing(true)
         .margins({
@@ -115,8 +115,4 @@ function show_correlation(ndx) {
         })
         .transitionDuration(500)
 
-}
-
-function resetChart() {
-    window.location.reload();
 }
