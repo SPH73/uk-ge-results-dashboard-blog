@@ -94,95 +94,91 @@
 
   <!-- CHARTS -->
   <!-- 2019 Results -->
-  <section id="latest">
-    <div class="container-fluid latest">
-      <div class="row heading">
-        <div class="col-sm-12 text-center">
-          <h3>The 2019 election has changed the political landscape</h3>
+  <section id="latest" class=container-fluid>
+    <div class="row heading">
+      <div class="col-sm-12 text-center">
+        <h3>The 2019 election has changed the political landscape</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <!-- Pie Chart-votes -->
+      <div class="row chart">
+        <div class="col-sm-6 text-center my-auto" id="votes-2019">
+          <h4>How were the votes cast?</h4>
+          <h6>Chart 1</h6>
+        </div>
+        <!-- Pie Chart-seats -->
+        <div class="col-sm-6 text-center my-auto" id="seats-2019">
+          <h4>What was the seat distribution?</h4>
+          <h6>Chart 2</h6>
         </div>
       </div>
-      <div class="container-fluid">
-        <!-- Pie Chart-votes -->
-        <div class="row chart">
-          <div class="col-sm-6 text-center my-auto" id="votes-2019">
-            <h4>How were the votes cast?</h4>
-            <h6>Chart 1</h6>
-          </div>
-          <!-- Pie Chart-seats -->
-          <div class="col-sm-6 text-center my-auto" id="seats-2019">
-            <h4>What was the seat distribution?</h4>
-            <h6>Chart 2</h6>
+      <!-- reset charts button -->
+      <div class="row button">
+        <div class="col-sm-12 text-center">
+          <button class="button btn btn-warning" onClick="resetChart()">Reset Charts</button>
+        </div>
+      </div>
+      <!-- Bubble Chart -->
+      <div class="row chart">
+        <div class="col-sm-8 text-center my-auto" id="seat-votes">
+          <h4>Not all votes are equal</h4>
+          <h6>Chart 3</h6>
+        </div>
+        <!-- How to use the select menu -->
+        <div class="col-sm-4 text-justify my-auto">
+          <h5 style="text-align: center;">Using the Charts</h5>
+          <p>To view smaller sets of data in the charts, use the select menu.</p>
+          <p>Select the range you are interested in and the charts will adjust to exclude the other data.</p>
+          <p>For example, in the 2019 Charts, select the appropriate range, or in the Historical Charts you can
+            isolate
+            an individual party if you wish to make a comparison of the amount of seats to votes.</p>
+          <!-- selector menu -->
+          <div class="row menu">
+            <div id="range-menu" class="col-12 text-center"></div>
           </div>
         </div>
-        <!-- reset charts button -->
-        <div class="row button">
-          <div class="col-sm-12 text-center">
-            <button class="button btn btn-warning" onClick="resetChart()">Reset Charts</button>
-          </div>
-        </div>
-        <!-- Bubble Chart -->
-        <div class="row chart">
-          <div class="col-sm-8 text-center my-auto" id="seat-votes">
-            <h4>Not all votes are equal</h4>
-            <h6>Chart 3</h6>
-          </div>
-          <!-- How to use the select menu -->
-          <div class="col-sm-4 text-justify my-auto">
-            <h5 style="text-align: center;">Using the Charts</h5>
-            <p>To view smaller sets of data in the charts, use the select menu.</p>
-            <p>Select the range you are interested in and the charts will adjust to exclude the other data.</p>
-            <p>For example, in the 2019 Charts, select the appropriate range, or in the Historical Charts you can
-              isolate
-              an individual party if you wish to make a comparison of the amount of seats to votes.</p>
-            <!-- selector menu -->
-            <div class="row menu">
-              <div id="range-menu" class="col-12 text-center"></div>
-            </div>
-          </div>
 
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Historical Charts -->
-  <section id="historical">
-    <div class="container-fluid">
+  <section id="historical" class="container-fluid">
 
-      <!-- Heading -->
-      <div class="row heading">
-        <div class="col-12 text-center">
-          <h3>Looking back over the last century of election results...</h3>
-        </div>
+    <!-- Heading -->
+    <div class="row heading">
+      <div class="col-12 text-center">
+        <h3>Looking back over the last century of election results...</h3>
       </div>
+    </div>
 
-      <!-- Stacked Chart - votes comparison -->
-      <div class="row chart">
-        <div class="col-12 text-center" id="votes">
-          <h4>Votes Comparison</h4>
-          <h6>Chart 4</h6>
-        </div>
+    <!-- Stacked Chart - votes comparison -->
+    <div class="row chart">
+      <div class="col-12 text-center" id="votes">
+        <h4>Votes Comparison</h4>
+        <h6>Chart 4</h6>
       </div>
+    </div>
 
-      <!-- selector menu -->
-      <div class="row menu">
-        <div class="col-12 text-center" id="select-menu"></div>
+    <!-- selector menu -->
+    <div class="row menu">
+      <div class="col-12 text-center" id="select-menu"></div>
+    </div>
+
+    <!-- reset charts button -->
+    <div class="row button">
+      <div class="col-sm-12 text-center">
+        <button class="btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
       </div>
+    </div>
 
-      <!-- reset charts button -->
-      <div class="row button">
-        <div class="col-sm-12 text-center">
-          <button class="btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
-        </div>
-      </div>
+    <!-- Composite Chart - seats comparison -->
 
-      <!-- Composite Chart - seats comparison -->
-
-      <div class="row chart">
-        <div class="col-12 text-center" id="composite">
-          <h4>Seats Comparison</h4>
-          <h6>Chart 5</h6>
-        </div>
+    <div class="row chart">
+      <div class="col-12 text-center" id="composite">
+        <h4>Seats Comparison</h4>
+        <h6>Chart 5</h6>
       </div>
     </div>
   </section>
