@@ -91,8 +91,10 @@ function show_correlation(ndx) {
         return [d.party, d.votes, d.seats];
     });
 
+    // group the data
     let bubble_group = bubble_dim.group();
 
+    // develop chart
     dc.bubbleChart("#seat-votes")
         .width(500)
         .height(250)
@@ -107,17 +109,21 @@ function show_correlation(ndx) {
         .group(bubble_group)
         .y(d3.scale.linear().domain([minSeats, maxSeats]))
         .x(d3.scale.linear().domain([minVotes, maxVotes]))
+
+        // develop bubbles
         .radiusValueAccessor(function (d) {
             return d.value;
         })
-        .r(d3.scale.log([0, 20]))
+        .r(d3.scale.log([0, 20])) //bubble size
         .keyAccessor(function (d) {
             return d.key[1];
-        })
+        }) //position on x axis
         .valueAccessor(function (d) {
             return d.key[2];
-        })
-        .clipPadding(70)
+        }) //position on y axis
+        .clipPadding(70) //allow bubble to over-flow axes
+
+        // set colours and label
         .colorAccessor(function (d) {
             return d.key;
         })
