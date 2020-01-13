@@ -1,120 +1,111 @@
-## Milestone Project 2
+### Milestone Project 2 - Code Institute Software Development Diploma
+#### Interactive Front End Development
 
-# A century of Great Britain's Voting Bias
+## A century of Great Britain's Voting Bias
+This aim of this project is to create a dashboard style blog with a visual representation of voting bias over the past century, using a presentation of known results, to see whether there was any noticeable correlation with historical events which may have played a role in swaying votes in a particular direction and how if at all it affected the distribution of seats in parliament. More specifically, I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distinguish any relational patterns when cognitive analysis was replaced by visual perception.
 
-This aim of this project is to create a visual representation of the public perspective of government based on how they have voted over the past century,using a presentation of known results, to see whether there was any noticeable correlation associated with historical events which may have played a role in swaying votes in a particular direction. I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distingush any relational patterns when cognitive analysis was replaced by visual perception.
-
-<hr>
-
+Table of Contents
 ### UX
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more appropriate for a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [dc.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `svg`element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio which helped to achieve this end.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+User: 1 As a user interested in the election results, I want to be able to absorb the data visually than from a text format so that I can view the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+User: 2 As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once.
 
-<hr>
+For User 1, I have strategically placed a ```Back To Top``` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top they can navigate via the Sources link in the <Nav>. All data sources and additional resources I used are found in the <footer> section where again, they will find a duplicate button to help them navigate back to the charts should they so desire.
+
+Page refresh buttons are located in each chart section however, the ```Select Menu``` can also reset the chart by clicking on Select All.
+For both types of user, I have tried to select graphs that would best represent the data type.
 
 ### Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The main features of this project are the graphs. There are five graphs to illustrate the two different datasets covering the latest results and the historical results. The former being an addition that became relevant during development.
 
-<hr>
+#### 2019 Results Charts
 
-### Existing Features
+For the latest election results charts, there are 2 Pie Charts and a Bubble chart. The Pie Charts refer to the votes and seats results respectively and the Bubble Chart collates the data presented in each Pie Chart and provides a comparison. It was included to elaborate the “first past the post” voting system that the UK adopts essentially to see how disparate the votes to seats figures are.
 
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+#### Historical Results Charts
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+A Stacked Bar Chart and Composite Chart display the full results for past century of the votes and seats results respectively, for each party. The intention for these charts was to show how the individual party’s fared in respect of their competition in order to highlight periods of strength and/or weakness. I had particularly hope to see whether there was a pattern associated to historical events. N.B. These chart make it possible to do so and I am continuing research on this aspect of my inquiry and intend to document my conclusion at a later date.
 
-<hr>
+### Select Menu
 
-### Features Left to Implement
+It was ideal to have a ```Select Menu``` for each chart section. For the 2019 election section I added in a range dimension to the dataset to make the ```Select Menu``` viable. I could already assume an irregularity in the Pie Charts as I had noted a similarity in the historical charts. I needed the ```Select Menu``` so that I could analyse the relationship (if any) between the number of seats won in comparison to the votes received. Prior to the seeing the charts for myself I had not known of the “first past the post voting system” and it was a lucky reveal. I received help in this aspect from a CI tutor who suggested that a range dimension would solve my problem as a simple party dimension wasn’t providing the selection I needed for my analysis.
+The ```Select Menu``` for the historical charts are a simple isolation of other parties data. Although the data set spans a century, there are far fewer registered parties than during the 2019 election and this was taken into consideration when deciding upon how to present the data.
 
-Another feature idea
+### Summary
 
-<hr>
+The project is in the style of a blog dashboard (if such a thing exists), which I felt was most appropriate for creating a project that answers my own questions and details my thoughts. I found that my analysis was verbose and I greatly reduced my initial write up in order to condense the project more to its purpose and requirements, namely, presentation of interactive data.
 
-### Technologies Used
+### About
 
-[Favicon Generator](https://www.favicon-generator.org/) is the tool I used to create the favicons for this project. Absolutely fabulous as it only took a miniute and I had all the icons and html links supplied simply by providing an image to the genrator.
+While this project was not a commercial in any manner, I included the about section so that any visitors were provided insight on the purpose and reason of the project and be able to identify with the author. Moreover, I had felt that an image was missing and so I decided to ask the question [Why include an author photo in a blog](https://www.shoutmeloud.com/4-ways-how-images-enhance-your-blog.html) and I was completely convinced that I should include one after seeing the results of my search.
 
-In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by [IMGonline.com.ua](https://www.imgonline.com.ua/eng/combine-two-images-into-one.php)
+### Final Comment
+This is hidden on mobile in order not to take up further real estate. To be frank, I couldn’t help myself; it was my reaction to being exposed to the latest results. It probably doesn’t add value but as it’s my project, and probably mostly for my benefir, I decided to humour myself.
 
-[File Type Converter](https://onlinetsvtools.com/convert-tsv-to-json)
+### Improvements to implement
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+I have been bothered that the colours for each party are not consistent. This is something I plan on addressing in the immediate future. The only reason I didn’t address it before submission is because I didn’t want to use more time on something that is a styling aspect and irrelevant to the project purpose, although I admit it provides a better user experience and needs to be amended.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
+## Technologies Used (aside from HTML5 and CSS3)
 
-<hr>
+### Frameworks:
+[Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/download/) for a responsive layout using
+[Bootswatch](https://bootswatch.com/) for the page style theme
+
+### Libraries:
+[D3.js](https://d3js.org/) for the data visualisation using DOM manipulation. D3.js is a JavaScript library for manipulating documents based on data.
+crossfilter.js(https://square.github.io/crossfilter/) for multidemsional data filtering. Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser.
+[DC.js](https://dc-js.github.io/dc.js/docs/html/index.html) for creating the interactive dashboard. dc.js is a javascript charting library with native crossfilter support, allowing highly efficient exploration on large multi-dimensional datasets (inspired by crossfilter's demo). It leverages d3 to render charts in CSS-friendly SVG format. Charts rendered using dc.js are data driven and reactive and therefore provide instant feedback to user interaction.
+[JavaScript] for dynamic functionality. JavaScript is the programming language of the web used to make web pages interactive.
+[Git] for version control. Git is a VCS that allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time etc.
+[GitHub] for remote version control and remote repository store for the project. It is a coding social site that allows you to upload code repositories for storage in the Git Version Control System.
+[GitHub pages] for deployment. It allows you to turn repositories into web pages.
+Favicon Generator to create the favicons.
+In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by IMGonline.com.ua
 
 ### Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+I have found [Test Cafe Studio](https://www.devexpress.com/products/testcafestudio/) however, at present I am not comfortable with writing automated tests and decided it was prudent to chose manual testing for now and attempt automated testing when the clock isn’t ticking. In order to ensure my project is production ready I have manually tested it on the following browsers: Chrome, Safari, Firefox, IE, Opera and Opera Mini.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I was most particularly focussed on viewing the charts on each of the bowsers both on a mobile phone, tablet as well as a desktop.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+I have Apple devices and additionally a Windows 10 PC, so I enlisted help to test the functionality of the site on other devices to ensure that the page loaded quickly and the charts could be viewed.
 
-<hr>
+The action taken was to load the GitHub pages site and view the charts. Click on the charts and see that the response was as expected. Use the ```Select Menu``` to reduce the chart data and ensure the charts matched the selection. Click on all the links and ensure that they open in a new browser tab that corresponded with the link value.
 
-### Contact form:
+During testing of the page links I noted that the ```target=_blank``` attribute wasn’t coded when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener```. However the navigation links and buttons were functioning properly.
 
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+All the chart functionality worked as intended across the devices and browsers.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+While testing I noticed that my Pie Charts ```Select Menu``` didn’t provide the results that I had envisioned. With the help of tutor support I was able to solve the issue by creating an additional range dimension that accurately provided the isolation of data that I needed for my analysis.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I used [W3C Markup Validation Service](https://validator.w3.org/) to check my HTML and CSS code and was pleased that there were no errors aside from a missing div tag in the HTML.
 
-<hr>
+I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my javascript code. It highlighted some missing semicolons and that I was using the let variable keyword.
 
-### Deployment
+## Deployment
+The project is currently only deployed on GutHub pages. In order to achieve this, I used the settings menu and navigated to the GitHub Pages section and selected the master branch as the source. The project can be viewed from [here](https://sph73.github.io/uk-ge-results-blog-dashboard/). It is updated via the master branch of the repository in real-time.
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The deployed version and the development version are currently identical.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+## Credits
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+Credit goes to CI tutor Stephen, for the idea to build an additional dimension for the range selection in order for me to properly use the 2019 charts for the analysis that I had originally intended. Due to the nature of my data not really being suitable for the ```Select Menu``` this was a wonderful workaround.
 
-<hr>
+Additionally, credit goes to Brian Macharia, my awesome mentor ,for suggesting that the select menu items were not very intuitive and suggested that they could be changed to provide a better user experience.
 
-### Credits
+## Media
+The free images used to generate the favicon was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
 
-Content
-The text for section Y was copied from the Wikipedia article Z
-The image used for the favicon
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@element5digital?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Element5 Digital"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Element5 Digital</span></a>
 
-<hr>
+## Acknowledgements
 
-### Media
-
-The photos used in this site were obtained from ...
-The free image used to generate the favicon was obtained from [here](#) using the search...
-
-<hr>
-
-### Acknowledgements
-
-### Inspiration
-
+## Inspiration
 Having just returned to England after a long period abroad, I found myself somewhat out of the loop with regards to politics, which was particularly emphasised by the upcoming election on December 12th, 2019. I spent rather a lot of time trying to improve my understanding and knowledge in order to feel like I would make an informed vote, without really succeeding as much as I had hoped. I chose to use the topic for my project in an attempt to answer my own questions and possibly provide a more vsual understanding of where GB stood in respect of the political parties based on the past 100 years. I felt this could potentially provide a platform for further questions to arise and construct a means to answer them.
 
-### Wireframes
-
+## Wireframes
 The original wireframes are located here.
-
-##### Footnote
