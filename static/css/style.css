@@ -88,20 +88,31 @@ CHARTS
  */
 
 /* 2019 */
+<<<<<<< HEAD
 
 /* Chart 3 */
 /* Bubble-Chart */
 
+=======
+/* Chart 3 */
+/* Bubble-Chart */
+
+>>>>>>> 3eb7f11fb9ce3cede37bfc0808f6661d28312198
 #seat-votes .dc-chart .axis.x text {
     font: 1em;
 }
 
+<<<<<<< HEAD
+=======
+/* Votes */
+>>>>>>> 3eb7f11fb9ce3cede37bfc0808f6661d28312198
 #seat-votes .axisx text.x-axis-label.x-label {
     font-size: 0.8em;
     font-weight: 100;
     line-height: 1;
 }
 
+/* Seats */
 #seat-votes .y-axis-label.y-label {
     font-size: 0.8em;
     font-weight: 400;
@@ -143,7 +154,11 @@ CHARTS
     font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* gridlines needed to be made darker */
+=======
+/* gridlines needed to be made darker to be seen */
+>>>>>>> 3eb7f11fb9ce3cede37bfc0808f6661d28312198
 .dc-chart .axis .grid-line,
 .dc-chart .axis .grid-line line,
 .dc-chart .grid-line,
@@ -162,4 +177,11 @@ footer {
 #resources ul li a,
 #resources h6 {
     color: rgba(238, 238, 238, 0.8)
+<<<<<<< HEAD
+=======
+}
+
+dc.chart text {
+    font: 1em sans-serif;
+>>>>>>> 3eb7f11fb9ce3cede37bfc0808f6661d28312198
 }
