@@ -11,19 +11,18 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-size: 100%;
     font-family: 'Quicksand', sans-serif;
 }
 
-
 div {
-    padding: 0.2rem;
+    padding: 0.2em;
 
 }
 
 .secondary-text {
-    font-size: 1.2em
+    font-size: 1.2rem
 }
-
 
 /* 
 BUTTONS 
@@ -33,19 +32,25 @@ BUTTONS
 .btn .button {
     border-radius: 5px;
     border: solid 1px;
-    box-shadow: 5px;
-    padding: 0.25rem;
+    padding: 0.25em;
 }
 
 /* 
 SMALL/MOBILE DEVICE ALERT
  */
 
-.alert {
+#alert {
     border-radius: 0;
+    margin: 0px;
+    padding: 0;
     background-color: silver;
-    margin-bottom: 0px;
-    padding: 0
+    color: rgba(238, 238, 238, 0.8)
+}
+
+#alert p {
+    margin: 0;
+    padding: 1px;
+    color: #3192f2;
 }
 
 /* 
@@ -60,7 +65,7 @@ SECTIONS
 #latest,
 #about {
     background-color: silver;
-    color: #777;
+    color: #403d3d;
 }
 
 .about p {
@@ -75,59 +80,70 @@ SECTIONS
 #summary,
 #comment {
     background-color: darkgrey;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(43, 40, 40, 0.75);
 }
 
-÷
 /* 
 CHARTS
  */
 
+/* 2019 */
+
 /* Chart 3 */
+/* Bubble-Chart */
 
-/* #seat-votes text {
-    font-size: 0.5em;
-    font-weight: 300;
+#seat-votes .dc-chart .axis.x text {
+    font: 1em;
+}
 
-} */
-
-#seat-votes .x-axis-label.x-label {
-    font-size: 0.1em;
+#seat-votes .axisx text.x-axis-label.x-label {
+    font-size: 0.8em;
     font-weight: 100;
+    line-height: 1;
 }
 
 #seat-votes .y-axis-label.y-label {
-    /* font-size: 0.1em; */
-    font-weight: 100;
+    font-size: 0.8em;
+    font-weight: 400;
+    transform: translate(20px, 90px) rotate(0);
 }
 
+/* Historical */
 /* Chart 4 */
+/* Stacked-Chart */
 
 #votes .axis.x text {
     transform: rotate(-45deg) translate(-20px, 0px);
-    font-size: 0.8em;
-    font-weight: 300;
-
+    font-size: 1em;
+    font-weight: 400;
 }
 
 #votes .x-axis-label.x-label {
-    /* font-size: 0.1em; */
-    font-weight: 100;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 /* Chart 5 */
+/* Composite-Chart */
+
+#composite .axis.x text,
+#composite .axis.y {
+    font-size: 1em;
+    font-weight: 400;
+}
 
 #composite .y-axis-label.y-label {
-    /* font-size: 1em; */
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 300;
     transform: translate(50px, 149px) rotate(0);
 }
 
 #composite .x-axis-label.x-label {
-    font-size: 0.5em;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
+/* gridlines needed to be made darker */
 .dc-chart .axis .grid-line,
 .dc-chart .axis .grid-line line,
 .dc-chart .grid-line,
@@ -137,6 +153,13 @@ CHARTS
     shape-rendering: crispEdges;
 }
 
+/* FOOTER */
 footer {
-    background-color: dimgray;
+    background-color: rgba(51, 51, 51, 0.75);
+    color: snow;
+}
+
+#resources ul li a,
+#resources h6 {
+    color: rgba(238, 238, 238, 0.8)
 }
