@@ -1,6 +1,6 @@
 queue()
     .defer(d3.tsv, "data/Full-results-2019-BBC.tsv")
-    .await(makeGraphs)
+    .await(makeGraphs);
 
 function makeGraphs(error, latestData) {
     if (error) throw error;
@@ -9,18 +9,18 @@ function makeGraphs(error, latestData) {
 
     // parse data
     latestData.forEach(function (d) {
-        d.party = d.party
+        d.party = d.party;
         d.votes = Number(+d.votes);
         d.seats = +d.seats;
-        d.seatChange = +d.seatChange
-        d.voteShare = +d.voteShare
-        d.voteShareChange = +d.voteShareChange
+        d.seatChange = +d.seatChange;
+        d.voteShare = +d.voteShare;
+        d.voteShareChange = +d.voteShareChange;
     });
 
-    show_range_selector(ndx)
-    show_votes(ndx)
-    show_seats(ndx)
-    show_correlation(ndx)
+    show_range_selector(ndx);
+    show_votes(ndx);
+    show_seats(ndx);
+    show_correlation(ndx);
 
     dc.renderAll();
 
@@ -47,7 +47,7 @@ function show_votes(ndx) {
         .useViewBoxResizing(true)
         .transitionDuration(1500)
         .dimension(party_dim)
-        .group(votes_per_party)
+        .group(votes_per_party);
 
 
 }
@@ -64,7 +64,7 @@ function show_seats(ndx) {
         .useViewBoxResizing(true)
         .transitionDuration(1500)
         .dimension(party_dim)
-        .group(seats_per_party)
+        .group(seats_per_party);
 
 }
 
@@ -72,7 +72,7 @@ function show_correlation(ndx) {
 
     let bubble_dim = ndx.dimension(function (d) {
         return [d.party, d.votes, d.seats];
-    })
+    });
     let bubble_group = bubble_dim.group();
 
     console.log(bubble_group.all());
@@ -93,14 +93,14 @@ function show_correlation(ndx) {
         .y(d3.scale.linear().domain([0, 365]))
         .x(d3.scale.linear().domain([0, 14000000]))
         .radiusValueAccessor(function (d) {
-            return d.value
+            return d.value;
         })
         .r(d3.scale.log([0, 20]))
         .keyAccessor(function (d) {
             return d.key[1];
         })
         .valueAccessor(function (d) {
-            return d.key[2]
+            return d.key[2];
         })
         .clipPadding(70)
         .colorAccessor(function (d) {
@@ -111,8 +111,8 @@ function show_correlation(ndx) {
         .xAxisLabel("Votes")
         .renderLabel(false)
         .title(function (d) {
-            return (d.key[0] + " won " + d.key[1].toString() + " votes and " + d.key[2] + " seats")
+            return (d.key[0] + " won " + d.key[1].toString() + " votes and " + d.key[2] + " seats");
         })
-        .transitionDuration(500)
+        .transitionDuration(500);
 
 }

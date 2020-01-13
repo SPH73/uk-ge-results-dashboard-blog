@@ -5,16 +5,16 @@ queue()
 function makeGraphs(error, historicalData) {
     if (error) throw error;
 
-    let = ndx = crossfilter(historicalData)
+    let ndx = crossfilter(historicalData);
 
     let parseYear = d3.time.format("%Y-%m").parse;
     historicalData.forEach(function (d) {
         d.yearS = parseYear(d.yearS);
     });
 
-    show_menu_selector(ndx)
+    show_menu_selector(ndx);
     show_votes_comparison(ndx);
-    show_seats_comparison(ndx)
+    show_seats_comparison(ndx);
 
     dc.renderAll();
 }
@@ -39,12 +39,12 @@ function show_votes_comparison(ndx) {
             } else {
                 return 0;
             }
-        }
-    };
+        };
+    }
 
     let votes_per_year_others = year_dim.group().reduceSum(votes_per_year("Other"));
 
-    let votes_per_year_scot = year_dim.group().reduceSum(votes_per_year("PC/SNP"))
+    let votes_per_year_scot = year_dim.group().reduceSum(votes_per_year("PC/SNP"));
 
     let votes_per_year_LD3 = year_dim.group().reduceSum(votes_per_year("LD3"));
 
@@ -74,7 +74,7 @@ function show_votes_comparison(ndx) {
             right: 50,
             bottom: 70,
             left: 100
-        })
+        });
 }
 
 function show_seats_comparison(ndx) {
@@ -91,8 +91,8 @@ function show_seats_comparison(ndx) {
             } else {
                 return 0;
             }
-        }
-    };
+        };
+    }
 
     let other_seats = year_dim.group().reduceSum(seats_per_year("Other"));
 
