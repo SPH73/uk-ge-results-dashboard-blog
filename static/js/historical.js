@@ -25,7 +25,10 @@ function show_menu_selector(ndx) {
 
     dc.selectMenu("#select-menu")
         .dimension(dim)
-        .group(group);
+        .group(group)
+        .title(function (d) {
+            return d.key;
+        });
 }
 
 function show_votes_comparison(ndx) {
@@ -55,8 +58,8 @@ function show_votes_comparison(ndx) {
     let stackedChart = dc.barChart("#votes");
 
     stackedChart
-        .width(700)
-        .height(350)
+        .width(1000)
+        .height(500)
         .useViewBoxResizing(true)
         .dimension(year_dim)
         .group(votes_per_year_others, "All Other")
@@ -71,9 +74,9 @@ function show_votes_comparison(ndx) {
         .legend(dc.legend().x(0).y(10).itemHeight(10).gap(5))
         .margins({
             top: 10,
-            right: 50,
-            bottom: 70,
-            left: 100
+            right: 30,
+            bottom: 90,
+            left: 110
         });
 }
 
@@ -106,14 +109,14 @@ function show_seats_comparison(ndx) {
 
     let compositeChart = dc.compositeChart("#composite");
     compositeChart
-        .width(700)
-        .height(350)
+        .width(800)
+        .height(400)
         .useViewBoxResizing(true)
         .dimension(year_dim)
         .legend(dc.legend().x(0).y(10).itemHeight(10).gap(5))
         .margins({
             top: 10,
-            right: 50,
+            right: 30,
             bottom: 50,
             left: 100
         })

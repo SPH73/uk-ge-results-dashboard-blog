@@ -17,6 +17,8 @@ function makeGraphs(error, latestData) {
         d.voteShareChange = +d.voteShareChange;
     });
 
+
+
     show_range_selector(ndx);
     show_votes(ndx);
     show_seats(ndx);
@@ -25,7 +27,7 @@ function makeGraphs(error, latestData) {
     dc.renderAll();
 
 }
-
+// Range select menu to provide user functionality on the chart data
 function show_range_selector(ndx) {
 
     let dim = ndx.dimension(dc.pluck('range'));
@@ -33,9 +35,13 @@ function show_range_selector(ndx) {
 
     dc.selectMenu("#range-menu")
         .dimension(dim)
-        .group(group);
-}
+        .group(group)
+        .title(function (d) {
+            return d.key + ' seats';
+        });
 
+}
+// Pie-Chart to display the votes won data
 function show_votes(ndx) {
 
     let party_dim = ndx.dimension(dc.pluck("party"));
@@ -43,15 +49,15 @@ function show_votes(ndx) {
 
     dc.pieChart("#votes-2019")
         .height(200)
-        .radius(200)
-        .useViewBoxResizing(true)
+        .radius(250)
+        .useViewBoxResizing(true) //viewBox will be set on the svg root element instead of width and height
         .transitionDuration(1500)
         .dimension(party_dim)
         .group(votes_per_party);
 
 
 }
-
+// Pie-Chart to display the seats won data
 function show_seats(ndx) {
 
     let party_dim = ndx.dimension(dc.pluck("party"));
@@ -60,38 +66,47 @@ function show_seats(ndx) {
 
     dc.pieChart("#seats-2019")
         .height(200)
-        .radius(200)
-        .useViewBoxResizing(true)
+        .radius(250)
+        .useViewBoxResizing(true) //viewBox will be set on the svg root element instead of width and height
         .transitionDuration(1500)
         .dimension(party_dim)
         .group(seats_per_party);
 
 }
 
+// Bubble Chart that takes both the voes and seats data per party to output to individual bubbles
 function show_correlation(ndx) {
 
+    // filter the dimensions to create the min and max range for the chart
+    let seat_dim = ndx.dimension(dc.pluck("seats"));
+    let minSeats = seat_dim.bottom(1)[0].seats
+    let maxSeats = seat_dim.top(1)[0].seats;
+
+    let votes_dim = ndx.dimension(dc.pluck("votes"));
+    let minVotes = votes_dim.bottom(1)[0].votes
+    let maxVotes = votes_dim.top(1)[0].votes;
+
+    // filter the data for the bubbles
     let bubble_dim = ndx.dimension(function (d) {
         return [d.party, d.votes, d.seats];
     });
+
     let bubble_group = bubble_dim.group();
-
-    console.log(bubble_group.all());
-
 
     dc.bubbleChart("#seat-votes")
         .width(500)
         .height(250)
-        .useViewBoxResizing(true)
+        .useViewBoxResizing(true) //viewBox will be set on the svg root element instead of width and height
         .margins({
             top: 10,
-            right: 30,
-            bottom: 30,
-            left: 30
+            right: 60,
+            bottom: 40,
+            left: 60
         })
         .dimension(bubble_dim)
         .group(bubble_group)
-        .y(d3.scale.linear().domain([0, 365]))
-        .x(d3.scale.linear().domain([0, 14000000]))
+        .y(d3.scale.linear().domain([minSeats, maxSeats]))
+        .x(d3.scale.linear().domain([minVotes, maxVotes]))
         .radiusValueAccessor(function (d) {
             return d.value;
         })
@@ -109,10 +124,10 @@ function show_correlation(ndx) {
         .colors(d3.scale.category20b())
         .yAxisLabel("Seats")
         .xAxisLabel("Votes")
-        .renderLabel(false)
+        .renderLabel(false) // avoiding clutter on the closely plotted bubbles
         .title(function (d) {
-            return (d.key[0] + " won " + d.key[1].toString() + " votes and " + d.key[2] + " seats");
-        })
+            return (d.key[0] + " won " + d.key[1] + " votes and " + d.key[2] + " seats");
+        }) //tooltip style custom label for bubbles
         .transitionDuration(500);
 
 }
