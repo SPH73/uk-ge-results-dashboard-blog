@@ -35,21 +35,21 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the ```<svg>``` element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users so that they become engaged in the presentations of data that avoid ambiguty so that they may become keen on their analysis as well as aesthetically pleasing with the choice of colour and typography and layout.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the ```<svg>``` element rather than chart ```width``` and ```height``` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
 
 **_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
 **_User: 2 As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._**
 
-_I have created charts from raw data selecting charts that i feel best represent the data type. They will assist both types of users to achieve their goals. The Pie Charts created for the latest election results are ideal for illustrating parts of a whole and as the dataset represents a single election. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see the relationships and anomalies in the data._
+_I have created charts from raw data selecting charts that i feel best represent the data type. They will assist both types of users to achieve their goals. The Pie Charts created for the latest election results are ideal for illustrating parts of a whole and as the dataset represents a single election. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see relationships and anomalies in the data._
 
 _The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The `select menu` for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century facilitating quick analysis of the data._
 
-_To enable the users to easily refresh the charts I have placed a refresh <button> in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
+_To enable the users to easily refresh the charts I have placed a refresh ```<button>``` in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
 
-_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the ```<Nav>```._
+_For User 1, I have strategically placed a ```&#8635;Top``` ```<button>``` beneath the charts. It is possible that this type of user may not be interested in the blog text. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the ```Sources link``` in the ```<Nav>```._
 
-_All data sources and additional resources I used are found in the ```<footer>``` section where again, they will find a duplicate button to help them navigate back to the charts (via the ```<nav>```)should they so desire._
+_All data sources and additional resources I used are found in the ```<footer>``` section where again, they will find a duplicate ```<button>``` to help them navigate back to the charts (via the ```<nav>```)should they so desire._
 
 _For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the ```<Footer>``` provide additional visual guidance that can be quickly scanned for relevance by each user type._
 
@@ -61,11 +61,11 @@ The main features of this project are the graphs. There are five graphs to illus
 
 #### 2.1.1. <a>2019 Results Charts</a>
 
-For the latest election results charts, there are 2 Pie Charts and a Bubble chart. The Pie Charts refer to the votes and seats results respectively and the Bubble Chart collates the data presented in each Pie Chart and provides a comparison. It was included to elaborate the “first past the post” voting system that the UK adopts essentially to see how disparate the votes to seats figures are.
+For the latest election results charts, there are 2 Pie Charts and a Bubble chart. The Pie Charts refer to the votes and seats results respectively and the Bubble Chart collates the data presented in each Pie Chart and provides a comparison. It was included to elaborate the “first past the post” voting system that the UK adopts, essentially to see how disparate the votes to seats figures are.
 
 #### 2.1.2. <a>Historical Results Charts</a>
 
-A Stacked Bar Chart and Composite Chart display the full results for past century of the votes and seats results respectively, for each party. The intention for these charts was to show how the individual party’s fared in respect of their competition in order to highlight periods of strength and/or weakness. I had particularly hope to see whether there was a pattern associated to historical events. N.B. These chart make it possible to do so and I am continuing research on this aspect of my inquiry and intend to document my conclusion at a later date.
+A Stacked Bar Chart and Composite Chart display the full results for past century of the votes and seats results respectively, for each party. The intention for these charts was to show how the individual party’s fared in respect of their competition in order to highlight periods of strength and/or weakness. I had particularly hope to see whether there was a pattern associated to historical events. N.B. These charts make it possible to do so and I am continuing research on this aspect of my inquiry and intend to document my conclusion at a later date.
 
 ### 2.1.3. <a>Select Menu</a>
 
@@ -78,7 +78,7 @@ The project is in the style of a blog dashboard (if such a thing exists), which 
 
 ### 2.3. <a>About</a>
 
-While this project was not a commercial in any manner, I included the about section so that any visitors were provided insight on the purpose and reason of the project and be able to identify with the author. Moreover, I had felt that an image was missing and so I decided to ask the question [Why include an author photo in a blog](https://www.shoutmeloud.com/4-ways-how-images-enhance-your-blog.html) and I was completely convinced that I should include one after seeing the results of my search.
+While this project was not a commercial in any manner, I included the About section so that any visitors were provided insight on the purpose and reason of the project and be able to identify with the author. Moreover, I had felt that an image was missing and so I decided to ask the question [Why include an author photo in a blog](https://www.shoutmeloud.com/4-ways-how-images-enhance-your-blog.html) and I was completely convinced that I should include one after seeing the results of my search.
 
 ### 2.4. <a>Final Comment</a>
 
@@ -129,32 +129,34 @@ _While testing I noticed that my Pie Charts `Select Menu` didn’t provide the r
 
 All the chart functionality worked as intended across the devices and browsers after the new range dimension was built. The navigation links and buttons were functioning properly.
 
-_During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener``` and that a tooltip would improve the user experience so these were added in this phase of the project._
+_During testing of the page links I noted that the ```target=_blank``` attribute wasn’t included when the links redirected me away from my site so this was added along with the ```rel=“noopener”``` to prevent abuse of ```winder.opener``` and that a ```tooltip``` would improve the user experience so these were added in this phase of the project._
 
-I used [W3C Markup Validation Service](https://validator.w3.org/) to check my HTML and CSS code and was pleased that there were no errors aside from a missing div tag in the HTML.
+I used [W3C Markup Validation Service](https://validator.w3.org/) to check my ```HTML``` and ```CSS``` code and was pleased that there were no errors aside from a missing div tag in the HTML.
 
-I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my javascript code. It highlighted some missing semicolons and that I was using the let variable keyword, which is not always compatible with older browsers. However, during my own testing the `let` keyword was parsed without problems.
+I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my ```javascript``` code. It highlighted some missing semicolons and that I was using the let variable keyword, which is not always compatible with older browsers. However, during my own testing the ```let``` keyword was parsed without problems.
 
 ## 6. <a>Deployment</a>
 
-The project is deployed on GitHub pages from the master branch and will update automatically upon new commits so the deployed version and the development version are currently identical. (The project will be forked before any additional work is commenced.)In order to achieve this, I used the settings menu and navigated to the GitHub Pages section and selected the master branch as the source. The project can be viewed from [here](https://sph73.github.io/uk-ge-results-blog-dashboard/).
+The project is deployed on GitHub Pages from the master branch and will update automatically upon new commits, so the deployed version and the development version are currently identical. (The project will be forked before any additional work is commenced.) In order to achieve this, I used the settings menu and navigated to the GitHub Pages section where I selected the master branch as the source. From here the generated link to the GitHub site was copied to this document and is always up to date with the latest commit. The project can be viewed [here](https://sph73.github.io/uk-ge-results-blog-dashboard/).
 
 ## 7. <a>Credits</a>
 
-For many aspects of the chart development I used the following tutorials, however, I did not copy any code from the sites. I used them in conjunction with the library documentation piecing the parts together to make a whole:
+For many aspects of the chart development I used the following tutorials, however, I did not copy any code from the sites. I used them in conjunction with the library documentation piecing the parts together to make a whole to provide the clarity and asnwer I was looking for:
 [CI Data Visualisations lessons](https://courses.codeinstitute.net/courses/course-v1:CI+FS_OC+T4_2019/courseware/671d5fab237d4a52a7886c9a2f1437e5/90f5690a3a8d4d2586e1af7111c80b5f/?activate_block_id=block-v1%3ACI%2BFS_OC%2BT4_2019%2Btype%40sequential%2Bblock%4090f5690a3a8d4d2586e1af7111c80b5f),
 [Tutorialspoint dc.js](https://www.tutorialspoint.com/dcjs/index.htm),
 [A gentle introduction to d3](https://www.freecodecamp.org/news/a-gentle-introduction-to-d3-how-to-build-a-reusable-bubble-chart-9106dc4f6c46/)
 
 ## 8. <a>Media</a>
 
-The free images used to generate the favicon was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
+The free images used to generate the ```favicon``` was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
 
 ## 9. <a>Acknowledgements</a>
 
-Additionally, thanks goes to Brian Macharia, my awesome mentor, for suggesting that the select menu items were not very intuitive and proposing that they could be changed to provide a better user experience.
+A special thanks goes to Brian Macharia, my awesome mentor, for supporting me in my project and suggesting that the ```select menu``` items were not very intuitive and proposing that they could be changed to provide a better user experience.
 
-Also to CI tutor Stephen, for the idea to build an additional dimension for the range selection in order for me to properly use the 2019 charts for the analysis that I had originally intended. Due to the nature of my data not really being suitable for the `Select Menu` this was a wonderful workaround.
+Also, thanks to CI tutor Stephen, for the idea to build an additional dimension for the range selection in order for me to properly use the 2019 charts for the analysis that I had originally intended. Due to the nature of my data not really being suitable for the ```Select Menu``` this was a wonderful workaround. 
+
+A special mention of all the CI tutors that spent time helping me to debug my code when I couldn't see the "woods for the tree's".
 
 ## 10. <a>Inspiration</a>
 
