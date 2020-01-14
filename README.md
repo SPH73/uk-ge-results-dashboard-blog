@@ -38,13 +38,13 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `<svg>` element rather than chart `width` and `height` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this. My aim was have to make the site appealing to the users; presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `<svg>` element rather than chart `width` and `height` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this. My aim was have to make the site appealing to the users; presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing through the use of colour, typography and layout using [Bootstrap4](https://getbootstrap.com/) and [Bootwatch Themes](https://bootswatch.com/)
 
 **_User: 1 - As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
-**_User: 2 - As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._**
+**_User: 2 - As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once and I would easily to see the changes over time._**
 
-_I have created charts from raw data specifically selecting charts that I feel best represent the data type. They will assist both types of users to achieve their goals. Pie Charts are ideal for illustrating parts of a whole. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see relationships and anomalies in the data. I chose these charts for the latest election results as they didn't have a year dimension._
+_I have specifically selected charts that I feel best represent the data type to assist both types of users to achieve their goals. Pie Charts are ideal for illustrating parts of a whole. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see relationships and anomalies in the data. I chose these charts for the latest election results as they didn't have a year dimension._
 
 _The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The `select menu` for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century, facilitating quick analysis of the data._
 
@@ -97,26 +97,32 @@ I have been bothered that the colours for each party are not consistent. This is
 
 ## 4. <a>Technologies Used</a>
 
+### <a>Programming Languages<a/>
+
+- [HTML5] for the property and behaviour of the webpage content and layout.
+- [CSS](http://www.css3.com/) to add additional styling for the site.
+- [JavaScript] for dynamic functionality. JavaScript is the programming language of the web used to make web pages interactive. I used it to code the charts and provide functionality making them interactive as we for the button functionality on the site.
+
 ### 4.1. <a>Frameworks</a>
 
-[Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/download/) for a responsive layout using
-[Bootswatch](https://bootswatch.com/) for the page style theme.
+- [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/download/) grid system classes for the responsive layout.
+- [Bootswatch](https://bootswatch.com/) for the page style theme.
 
 ### 4.2. <a>Toolkits</a>
 
-[Font-Awesome](https://www.bootstrapcdn.com/fontawesome/) for the footer icons.
+- [Font-Awesome](https://www.bootstrapcdn.com/fontawesome/) for the footer icons.
 
 ### 4.3. <a>Libraries</a>
 
-[D3.js](https://d3js.org/) for the data visualisation using DOM manipulation. D3.js is a JavaScript library for manipulating documents based on data.
-crossfilter.js(https://square.github.io/crossfilter/) for multidemsional data filtering. Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser.
-[DC.js](https://dc-js.github.io/dc.js/docs/html/index.html) for creating the interactive dashboard. dc.js is a javascript charting library with native crossfilter support, allowing highly efficient exploration on large multi-dimensional datasets (inspired by crossfilter's demo). It leverages d3 to render charts in CSS-friendly SVG format. Charts rendered using dc.js are data driven and reactive and therefore provide instant feedback to user interaction.
-[JavaScript] for dynamic functionality. JavaScript is the programming language of the web used to make web pages interactive.
-[Git] for version control. Git is a VCS that allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time etc.
-[GitHub] for remote version control and remote repository store for the project. It is a coding social site that allows you to upload code repositories for storage in the Git Version Control System.
-[GitHub pages] for deployment. It allows you to turn repositories into web pages.
-Favicon Generator to create the favicons.
-In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by IMGonline.com.ua
+- [D3.js](https://d3js.org/) for the data visualisation using DOM manipulation. D3.js is a JavaScript library for manipulating documents based on data.
+  crossfilter.js(https://square.github.io/crossfilter/) for multidemsional data filtering. Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser.
+  [\* DC.js](https://dc-js.github.io/dc.js/docs/html/index.html) for creating the interactive dashboard. dc.js is a javascript charting library with native crossfilter support, allowing highly efficient exploration on large multi-dimensional datasets (inspired by crossfilter's demo). It leverages d3 to render charts in CSS-friendly SVG format. Charts rendered using dc.js are data driven and reactive and therefore provide instant feedback to user interaction.
+
+- [Git] for version control. Git is a VCS that allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time etc.
+- [GitHub] for remote version control and remote repository store for the project. It is a coding social site that allows you to upload code repositories for storage in the Git Version Control System.
+  [GitHub pages] for deployment. It allows you to turn repositories into web pages.
+  Favicon Generator to create the favicons.
+  In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by IMGonline.com.ua
 
 ### 5. <a>Testing</a>
 
