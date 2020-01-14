@@ -1,38 +1,36 @@
-Milestone Project 2 - Code Institute Software Development Diploma
+<h4>Milestone Project 2 - Code Institute Software Development Diploma</h4>
 
-Interactive Front End Development
+<h4>Interactive Front End Development</h4>
 
-A century of Great Britain's Voting Bias
+<h1>A Century of Great Britain's Voting Bias<h1>
 
-This aim of this project is to create a dashboard style blog with a visual representation of voting bias over the past century, using a presentation of known results, to see whether there was any noticeable correlation with historical events which may have played a role in swaying votes in a particular direction and how if at all it affected the distribution of seats in parliament. More specifically, I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distinguish any relational patterns when cognitive analysis was replaced by visual perception.
+The aim of this project was to create a dashboard style blog with a visual representation of voting bias over the past century, using a presentation of known results, to see whether there was any noticeable correlation with historical events which may have played a role in swaying votes in a particular direction and how if at all it affected the distribution of seats in parliament.
 
-Table of Contents
+More specifically, I wanted to see whether any ordinary person who isn't an expert on the topic, would be able to distinguish any relational patterns when cognitive analysis was replaced by visual perception.
 
-<!-- TOC -->
+<h3>Table of Contents<h3>
 
-    - [UX](#ux)
-    - [Features](#features)
-        - [Results Charts](#results-charts)
-        - [Historical Results Charts](#historical-results-charts)
-    - [Select Menu](#select-menu)
-    - [Summary](#summary)
-    - [About](#about)
-    - [Final Comment](#final-comment)
-    - [Sources](#sources)
-    - [Improvements to implement](#improvements-to-implement)
+- [UX](#ux)
+- [Features](#features)
+  - [Results Charts](#results-charts)
+  - [Historical Results Charts](#historical-results-charts)
+  - [Select Menu](#select-menu)
+  - [Summary](#summary)
+  - [About](#about)
+  - [Final Comment](#final-comment)
+  - [Sources](#sources)
+- [Improvements to implement](#improvements-to-implement)
 - [Technologies Used](#technologies-used)
-    - [Frameworks:](#frameworks)
-    - [Toolkits](#toolkits)
-    - [Libraries:](#libraries)
-    - [Testing](#testing)
+  - [Frameworks](#frameworks)
+  - [Toolkits](#toolkits)
+  - [Libraries](#libraries)
+- [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Media](#media)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements](#acknowledgments)
 - [Inspiration](#inspiration)
-- [Wireframes](#wireframes)
-
-<!-- /TOC -->
+- [Wireframes](#wirefames)
 
 ### ..1. UX
 
