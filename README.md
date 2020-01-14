@@ -12,48 +12,49 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 1. [UX](#ux)
 2. [Features](#features)
+
    1. [Charts](#charts)
       1. [Results Charts](#results-charts)
       2. [Historical Results Charts](#historical-results-charts)
       3. [Select Menu](#select-menu)
 
-  2. [Summary](#summary)
-  3. [About](#about)
-  4. [Final Comment](#final-comment)
-  5. [Sources](#sources)
+3. [Summary](#summary)
+4. [About](#about)
+5. [Final Comment](#final-comment)
+6. [Sources](#sources)
 
-3. [Improvements to implement](#improvements-to-implement)
-4. [Technologies Used](#technologies-used)
+7. [Improvements to implement](#improvements-to-implement)
+8. [Technologies Used](#technologies-used)
    1. [Frameworks](#frameworks)
    2. [Toolkits](#toolkits)
    3. [Libraries](#libraries)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
-8. [Media](#media)
-9. [Acknowledgements](#acknowledgments)
-10. [Inspiration](#inspiration)
-11. [Wireframes](#wirefames)
+9. [Testing](#testing)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
+12. [Media](#media)
+13. [Acknowledgements](#acknowledgments)
+14. [Inspiration](#inspiration)
+15. [Wireframes](#wirefames)
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `<svg>` element rather than chart `width` and `height` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `<svg>` element rather than chart `width` and `height` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this. My aim was have to make the site appealing to the users; presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
 
-**_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
+**_User: 1 - As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
-**_User: 2 As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._**
+**_User: 2 - As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._**
 
-_I have created charts from raw data selecting charts that i feel best represent the data type. They will assist both types of users to achieve their goals. The Pie Charts created for the latest election results are ideal for illustrating parts of a whole and as the dataset represents a single election. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see relationships and anomalies in the data._
+_I have created charts from raw data specifically selecting charts that I feel best represent the data type. They will assist both types of users to achieve their goals. Pie Charts are ideal for illustrating parts of a whole. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see relationships and anomalies in the data. I chose these charts for the latest election results as they didn't have a year dimension._
 
-_The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The `select menu` for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century facilitating quick analysis of the data._
+_The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The `select menu` for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century, facilitating quick analysis of the data._
 
 _To enable the users to easily refresh the charts I have placed a refresh `<button>` in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
 
-_For User 1, I have strategically placed a `&#8635;Top` `<button>` beneath the charts. It is possible that this type of user may not be interested in the blog text. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the `Sources link` in the `<Nav>`._
+_For User 1, I have strategically placed a `<button>` beneath the charts for the users to naviagte back to the top. It is possible that this type of user may not be interested in the blog text. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the `Sources link` in the `<Nav>`._
 
-_All data sources and additional resources I used are found in the `<footer>` section where again, they will find a duplicate `<button>` to help them navigate back to the charts (via the `<nav>`)should they so desire._
+_All data sources and additional resources I used are found in the `<footer>` section where again, they will find a duplicate `<button>` to help users navigate back to the charts (via the `<nav>`)should they so desire._
 
-_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the `<Footer>` provide additional visual guidance that can be quickly scanned for relevance by each user type._
+_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections adding Icons and Tooltips in the `<Footer>` provide additional visual guidance so they can be quickly scanned for relevance by each user type._
 
 ## 2. <a>Features</a>
 
