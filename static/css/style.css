@@ -24,6 +24,11 @@ div {
     font-size: 1.2rem
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+}
+
 /* 
 BUTTONS 
 */
