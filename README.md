@@ -47,7 +47,9 @@ _The Historical Charts display a much larger dataset. The different dimensions a
 
 _To enable the users to easily refresh the charts I have placed a refresh <button> in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
 
-_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the <Nav>. All data sources and additional resources I used are found in the <footer> section where again, they will find a duplicate button to help them navigate back to the charts (via the <nav>)should they so desire._
+_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the <Nav>._
+
+_All data sources and additional resources I used are found in the <footer> section where again, they will find a duplicate button to help them navigate back to the charts (via the <nav>)should they so desire._
 
 _For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the <Footer> provide additional visual guidance that can be quickly scanned for relevance by each user type._
 
