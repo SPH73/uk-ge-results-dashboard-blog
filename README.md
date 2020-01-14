@@ -10,32 +10,32 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 ### Table of Contents
 
-- 1. [UX](#ux)
-- 2. [Features](#features)
-  - 2.1. [Charts](#charts)
-    - 2.1.1. [Results Charts](#results-charts)
-    - 2.1.2. [Historical Results Charts](#historical-results-charts)
-    - 2.1.3. [Select Menu](#select-menu)
-  - 2.2. [Summary](#summary)
-  - 2.3. [About](#about)
-  - 2.4. [Final Comment](#final-comment)
-  - 2.5 [Sources](#sources)
-- 3. [Improvements to implement](#improvements-to-implement)
-- 4. [Technologies Used](#technologies-used)
-  - 4.1 [Frameworks](#frameworks)
-  - 4.2 [Toolkits](#toolkits)
-  - 4.3 [Libraries](#libraries)
-- 5. [Testing](#testing)
-- 6. [Deployment](#deployment)
-- 7. [Credits](#credits)
-- 8. [Media](#media)
-- 9. [Acknowledgements](#acknowledgments)
-- 10. [Inspiration](#inspiration)
-- 11. [Wireframes](#wirefames)
+1. [UX](#ux)
+2. [Features](#features)
+   2.1.[Charts](#charts)
+   2.1.1.[Results Charts](#results-charts)
+   2.1.2.[Historical Results Charts](#historical-results-charts)
+   2.1.3.[Select Menu](#select-menu)
+   2.2.[Summary](#summary)
+   2.3.[About](#about)
+   2.4.[Final Comment](#final-comment)
+   2.5.[Sources](#sources)
+3. [Improvements to implement](#improvements-to-implement)
+4. [Technologies Used](#technologies-used)
+   4.1.[Frameworks](#frameworks)
+   4.2.[Toolkits](#toolkits)
+   4.3. [Libraries](#libraries)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Media](#media)
+9. [Acknowledgements](#acknowledgments)
+10. [Inspiration](#inspiration)
+11. [Wireframes](#wirefames)
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the ```<svg>``` element rather than chart ```width``` and ```height``` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `<svg>` element rather than chart `width` and `height` attributes, enabling the chart to resize responsively, whilst maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users presenting the data in a way that is unambiguous so that they become engaged in their analysis. Additionally, I have endeavoured to create a site that is aesthetically pleasing by menas of colour, typography and layout.
 
 **_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
@@ -45,13 +45,13 @@ _I have created charts from raw data selecting charts that i feel best represent
 
 _The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The `select menu` for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century facilitating quick analysis of the data._
 
-_To enable the users to easily refresh the charts I have placed a refresh ```<button>``` in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
+_To enable the users to easily refresh the charts I have placed a refresh `<button>` in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
 
-_For User 1, I have strategically placed a ```&#8635;Top``` ```<button>``` beneath the charts. It is possible that this type of user may not be interested in the blog text. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the ```Sources link``` in the ```<Nav>```._
+_For User 1, I have strategically placed a `&#8635;Top` `<button>` beneath the charts. It is possible that this type of user may not be interested in the blog text. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the `Sources link` in the `<Nav>`._
 
-_All data sources and additional resources I used are found in the ```<footer>``` section where again, they will find a duplicate ```<button>``` to help them navigate back to the charts (via the ```<nav>```)should they so desire._
+_All data sources and additional resources I used are found in the `<footer>` section where again, they will find a duplicate `<button>` to help them navigate back to the charts (via the `<nav>`)should they so desire._
 
-_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the ```<Footer>``` provide additional visual guidance that can be quickly scanned for relevance by each user type._
+_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the `<Footer>` provide additional visual guidance that can be quickly scanned for relevance by each user type._
 
 ## 2. <a>Features</a>
 
@@ -129,11 +129,11 @@ _While testing I noticed that my Pie Charts `Select Menu` didn’t provide the r
 
 All the chart functionality worked as intended across the devices and browsers after the new range dimension was built. The navigation links and buttons were functioning properly.
 
-_During testing of the page links I noted that the ```target=_blank``` attribute wasn’t included when the links redirected me away from my site so this was added along with the ```rel=“noopener”``` to prevent abuse of ```winder.opener``` and that a ```tooltip``` would improve the user experience so these were added in this phase of the project._
+_During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”` to prevent abuse of `winder.opener` and that a `tooltip` would improve the user experience so these were added in this phase of the project._
 
-I used [W3C Markup Validation Service](https://validator.w3.org/) to check my ```HTML``` and ```CSS``` code and was pleased that there were no errors aside from a missing div tag in the HTML.
+I used [W3C Markup Validation Service](https://validator.w3.org/) to check my `HTML` and `CSS` code and was pleased that there were no errors aside from a missing div tag in the HTML.
 
-I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my ```javascript``` code. It highlighted some missing semicolons and that I was using the let variable keyword, which is not always compatible with older browsers. However, during my own testing the ```let``` keyword was parsed without problems.
+I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my `javascript` code. It highlighted some missing semicolons and that I was using the let variable keyword, which is not always compatible with older browsers. However, during my own testing the `let` keyword was parsed without problems.
 
 ## 6. <a>Deployment</a>
 
@@ -148,13 +148,13 @@ For many aspects of the chart development I used the following tutorials, howeve
 
 ## 8. <a>Media</a>
 
-The free images used to generate the ```favicon``` was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
+The free images used to generate the `favicon` was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
 
 ## 9. <a>Acknowledgements</a>
 
-A special thanks goes to Brian Macharia, my awesome mentor, for supporting me in my project and suggesting that the ```select menu``` items were not very intuitive and proposing that they could be changed to provide a better user experience.
+A special thanks goes to Brian Macharia, my awesome mentor, for supporting me in my project and suggesting that the `select menu` items were not very intuitive and proposing that they could be changed to provide a better user experience.
 
-Also, thanks to CI tutor Stephen, for the idea to build an additional dimension for the range selection in order for me to properly use the 2019 charts for the analysis that I had originally intended. Due to the nature of my data not really being suitable for the ```Select Menu``` this was a wonderful workaround. 
+Also, thanks to CI tutor Stephen, for the idea to build an additional dimension for the range selection in order for me to properly use the 2019 charts for the analysis that I had originally intended. Due to the nature of my data not really being suitable for the `Select Menu` this was a wonderful workaround.
 
 A special mention of all the CI tutors that spent time helping me to debug my code when I couldn't see the "woods for the tree's".
 
