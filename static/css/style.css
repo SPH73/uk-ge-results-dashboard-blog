@@ -157,10 +157,50 @@ CHARTS
 /* FOOTER */
 footer {
     background-color: rgba(51, 51, 51, 0.75);
-    color: snow;
 }
 
-#resources ul li a,
-#resources h6 {
-    color: rgba(238, 238, 238, 0.8)
+#resources .left {
+    text-align: left;
+    padding: 1rem 0 1rem 0.5rem;
+    margin: 0 0 0.5em 0;
+}
+
+#resources .right {
+    text-align: right;
+    padding: 1rem 0 1rem 0.5rem;
+    margin: 0 0 0.5em 0;
+
+}
+
+#resources h6,
+#resources ul li a {
+    color: rgba(238, 238, 238, 0.8);
+}
+
+#resources ul {
+    padding-left: 0;
+}
+
+a i {
+    line-height: 1.5;
+    vertical-align: middle;
+    font-size: 1rem
+}
+
+/* icons */
+li a i {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem 0.25rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(238, 238, 238, 0.8);
+    color: rgba(51, 51, 51, 0.75);
+    transition: all 0.35s ease-in-out;
+}
+
+li a i:hover {
+    background-color: rgba(112, 105, 105, 0.75);
 }

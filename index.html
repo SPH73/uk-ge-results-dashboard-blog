@@ -27,6 +27,11 @@
 
   <!-- Styling -->
   <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" />
+
   <link rel="stylesheet" href="static/css/dc.min.css" />
   <link rel="stylesheet" href="static/css/style.css">
 
@@ -45,6 +50,7 @@
 </head>
 
 <body>
+  <!-- MOBILE ALERT -->
   <div class="container-fluid" id="alert">
     <div class="row">
       <div class="col-sm-12 d-sm d-lg-none text-center">
@@ -52,6 +58,8 @@
       </div>
     </div>
   </div>
+  <!-- END OF ALERT -->
+
   <!-- NAV -->
   <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
     <img src="assets/img/union-jack.jpg" alt="Union Jack" style="width:40px;">
@@ -90,6 +98,7 @@
       vote. That's quite a remarkable position to start in.</h5>
     <p class="secondary-text">What do the results tell us? Examine the charts to draw your own conclusion...</p>
   </div>
+  <!-- END OF HEADING -->
 
   <!-- CHARTS -->
   <!-- 2019 Results -->
@@ -115,7 +124,7 @@
       <!-- reset charts button -->
       <div class="row">
         <div class="col-sm-12 text-center">
-          <button class="button btn btn-warning" onClick="resetChart()">Reset Charts</button>
+          <button class="button btn btn-warning" onClick="resetChart()"> &#8635; Reset</button>
         </div>
       </div>
       <!-- Bubble Chart -->
@@ -173,20 +182,22 @@
       <!-- reset charts button -->
       <div class="row">
         <div class="col-12 text-center">
-          <button class="btn btn-warning" type="button" onClick="resetChart()">Reset Charts</button>
+          <button class="btn btn-warning" type="button" onClick="resetChart()"> &#8635; Reset</button>
         </div>
       </div>
     </div>
   </section>
+  <!-- END OF CHARTS -->
 
   <!-- SUMMARY -->
   <section id="summary" class="container-fluid">
     <!-- Back To Top Button -->
     <div class="row">
       <div class="col-sm-12 text-center">
-        <a href="#nav" class="btn btn-info" role="button">Back To Top</a>
+        <a href="#nav" class="btn btn-info" role="button">&#8593;Top</a>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-justify">
@@ -234,8 +245,8 @@
         </div>
       </div>
     </div>
-
   </section>
+  <!-- END OF SUMAMRY -->
 
   <!-- ABOUT -->
   <section id="about" class="container-fluid">
@@ -272,6 +283,7 @@
       </div>
     </div>
   </section>
+  <!-- END OF ABOUT -->
 
   <!-- Additional comment on desktop display -->
   <section id="comment" class="d-none d-lg-block">
@@ -304,56 +316,87 @@
       </div>
     </div>
   </section>
+  <!-- END OF COMMENT -->
 
+  <!-- FOOTER -->
   <footer id="resources">
     <div class="container-fluid">
       <!-- Back To Top Button -->
       <div class="row">
         <div class="col-sm-12 text-center">
-          <a href="#nav" class="btn btn-info" role="button">Back To Top</a>
+          <a href="#nav" class="btn btn-info" role="button">&#8593;Top</a>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <h6>Data Sources</h6>
+          <div class="col-sm-12 col-md-6 left">
+            <h6>DATA SOURCES</h6>
             <ul>
-              <li>
-                <a target="_blank" rel=noopener href="https://www.bbc.co.uk/news/election/2019/results">2019 Raw Data -
-                  BBC</a></li>
-              <li>
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener href="https://www.bbc.co.uk/news/election/2019/results"
+                  data-toggle="tooltip" title="Open BBC Elections results page">
+                  <i class="fa fa-book"><span class="sr-only">read 2019 results on BBC
+                      website</span></i> 2019 Election Results </a></li>
+
+              <li class="list-unstyled">
                 <a target="_blank" rel=noopener
-                  href="http://researchbriefings.files.parliament.uk/documents/CBP-7529/CBP-7529.Download.xlsx">Historical
-                  Data</a>
-              </li>
-              <li>
+                  href="http://researchbriefings.files.parliament.uk/documents/CBP-7529/CBP-7529.Download.xlsx"
+                  data-toggle="tooltip" title="Download Data File">
+                  <i class="fa fa-download"><span class="sr-only">download the file</span></i> Historical
+                  Data </a></li>
+
+              <li class="list-unstyled">
                 <a target="_blank" rel=noopener
-                  href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529#fullreport">Full
-                  Report</a>
-              </li>
+                  href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529#fullreport"
+                  data-toggle="tooltip" title="Download Data File">
+                  <i class="fa fa-download"><span class="sr-only">download full report</span></i> Full
+                  Report </a></li>
             </ul>
           </div>
-          <div class="col-sm-6">
-            <h6>Additional Resources</h6>
-            <ul>
-              <li><a target="_blank" rel=noopener
-                  href="https://commonslibrary.parliament.uk/parliament-and-elections/general-election-2019-the-results-so-far/">General
-                  Election 2019: The Results</a>
-              </li>
-              <li><a target="_blank" rel=noopener
-                  href="https://www.britannica.com/topic/election-political-science">Election - Political Science</a>
-              </li>
-              <li><a target="_blank" rel=noopener href="https://about-britain.com/institutions/political-parties.htm">A
-                  guide to the party political
-                  system in Britain</a></li>
-              <li><a target="_blank" rel=noopener
-                  href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529">UK Election
-                  statistics 1818-2019</a></li>
-              <li><a target="_blank" rel=noopener
-                  href="https://www.freewebs.com/leeyk/Political%20Science%20II/Chapter%201.pdf">What is
-                  politics?</a>
-              </li>
+
+          <div class="col-sm-12 col-md-6 right">
+            <h6>ADDITIONAL RESOURCES</h6>
+            <ul class="footer-links">
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener
+                  href="https://commonslibrary.parliament.uk/parliament-and-elections/general-election-2019-the-results-so-far/"
+                  data-toggle="tooltip" title="Open article">
+                  General Election 2019: The Results <i class="fa fa-book"><span class="sr-only">read
+                      general election 2019 - the results</span></a></i></li>
+
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener href="https://www.britannica.com/topic/election-political-science"
+                  data-toggle="tooltip" title="Open article"> Election - Political Science <i class="fa fa-book"><span
+                      class="sr-only">read article on political
+                      science</span></i></a></li>
+
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener href="https://about-britain.com/institutions/political-parties.htm"
+                  data-toggle="tooltip" title="Open article"> The Party Political
+                  System <i class="fa fa-book"><span class="sr-only">read the guide to the political
+                      party
+                      system</span></i></a></li>
+
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener
+                  href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7529" data-toggle="tooltip"
+                  title="Open article"> UK Election Statistics 1818-2019 <i class="fa fa-book"><span
+                      class="sr-only">read Uk election statistics 1818-2019</span></i></a></li>
+
+              <li class="list-unstyled">
+                <a target="_blank" rel=noopener
+                  href="https://www.freewebs.com/leeyk/Political%20Science%20II/Chapter%201.pdf" data-toggle="tooltip"
+                  title="Open article"> What Is Politics? <i class="fa fa-book"><span class="sr-only">read
+                      what
+                      is politics?</span></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center my-auto">
+            <i class="fa fa-copyright">2020</i><span class="sr-only">Copyright 2019</span>
+            </li>
             </ul>
           </div>
         </div>
@@ -361,6 +404,9 @@
     </div>
   </footer>
 
+  <!-- END OF CONTENT -->
+
+  <!-- Bootstrap Javascript Functionality -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
@@ -370,6 +416,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <!-- Navbar Functionality and Page Refresh -->
   <script src="static/js/scripts.js"></script>
 </body>
 
