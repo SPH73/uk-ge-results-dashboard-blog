@@ -222,3 +222,8 @@ li a i {
 li a i:hover {
     background-color: rgba(112, 105, 105, 0.75);
 }
+
+.copyright {
+    font-size: inherit;
+    color: rgba(238, 238, 238, 0.8);
+}
