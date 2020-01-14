@@ -35,7 +35,7 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the <svg> element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users so that they become engaged in the presentations of data that avoid ambiguty so that they may become keen on their analysis as well as aesthetically pleasing with the choice of colour and typography and layout.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the ```<svg>``` element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users so that they become engaged in the presentations of data that avoid ambiguty so that they may become keen on their analysis as well as aesthetically pleasing with the choice of colour and typography and layout.
 
 **_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
@@ -47,11 +47,11 @@ _The Historical Charts display a much larger dataset. The different dimensions a
 
 _To enable the users to easily refresh the charts I have placed a refresh <button> in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
 
-_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the `<Nav>`._
+_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the ```<Nav>```._
 
-_All data sources and additional resources I used are found in the `<footer>` section where again, they will find a duplicate button to help them navigate back to the charts (via the <nav>)should they so desire._
+_All data sources and additional resources I used are found in the ```<footer>``` section where again, they will find a duplicate button to help them navigate back to the charts (via the ```<nav>```)should they so desire._
 
-_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the <Footer> provide additional visual guidance that can be quickly scanned for relevance by each user type._
+_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the ```<Footer>``` provide additional visual guidance that can be quickly scanned for relevance by each user type._
 
 ## 2. <a>Features</a>
 
