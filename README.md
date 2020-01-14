@@ -12,25 +12,25 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 - [1. UX](#ux)
 - [2. Features](#features)
--   [2.1 Charts](#charts)
-  - [2.1.1 Results Charts](#results-charts)
-  - [2.1.2 Historical Results Charts](#historical-results-charts)
-  - [2.1.3 Select Menu](#select-menu)
-  - [2.2 Summary](#summary)
-  - [2.3 About](#about)
-  - [2.4 Final Comment](#final-comment)
-  - [2.5 Sources](#sources)
-- [3 Improvements to implement](#improvements-to-implement)
-- [4 Technologies Used](#technologies-used)
-  - [4.1 Frameworks](#frameworks)
-  - [4.2 Toolkits](#toolkits)
-  - [4.2 Libraries](#libraries)
+- [2.1. Charts](#charts)
+- [2.1.1. Results Charts](#results-charts)
+- [2.1.2. Historical Results Charts](#historical-results-charts)
+- [2.1.3. Select Menu](#select-menu)
+- [2.2. Summary](#summary)
+- [2.3. About](#about)
+- [2.4. Final Comment](#final-comment)
+- [2.5. Sources](#sources)
+- [3. Improvements to implement](#improvements-to-implement)
+- [4. Technologies Used](#technologies-used)
+  - [4.1. Frameworks](#frameworks)
+  - [4.2. Toolkits](#toolkits)
+  - [4.2. Libraries](#libraries)
 - [5. Testing](#testing)
 - [6. Deployment](#deployment)
 - [7. Credits](#credits)
 - [8. Media](#media)
-- [9.Acknowledgements](#acknowledgments)
-- [10.Inspiration](#inspiration)
+- [9. Acknowledgements](#acknowledgments)
+- [10. Inspiration](#inspiration)
 - [11. Wireframes](#wirefames)
 
 ## 1. <a>UX</a>
@@ -50,19 +50,19 @@ Icons and Tooltips in the <Footer> provide additional information that can be qu
 
 ## 2. <a>Features</a>
 
-### 2.1 <a>Charts</a>
+### 2.1. <a>Charts</a>
 
 The main features of this project are the graphs. There are five graphs to illustrate the two different datasets covering the latest results and the historical results. The former being an addition that became relevant during development.
 
-#### 2.1.1 <a>2019 Results Charts</a>
+#### 2.1.1. <a>2019 Results Charts</a>
 
 For the latest election results charts, there are 2 Pie Charts and a Bubble chart. The Pie Charts refer to the votes and seats results respectively and the Bubble Chart collates the data presented in each Pie Chart and provides a comparison. It was included to elaborate the “first past the post” voting system that the UK adopts essentially to see how disparate the votes to seats figures are.
 
-#### 2.1.2 <a>Historical Results Charts</a>
+#### 2.1.2. <a>Historical Results Charts</a>
 
 A Stacked Bar Chart and Composite Chart display the full results for past century of the votes and seats results respectively, for each party. The intention for these charts was to show how the individual party’s fared in respect of their competition in order to highlight periods of strength and/or weakness. I had particularly hope to see whether there was a pattern associated to historical events. N.B. These chart make it possible to do so and I am continuing research on this aspect of my inquiry and intend to document my conclusion at a later date.
 
-### 2.1.3 <a>Select Menu</a>
+### 2.1.3. <a>Select Menu</a>
 
 It was ideal to have a `Select Menu` for each chart section. For the 2019 election section I added in a range dimension to the dataset to make the `Select Menu` viable. I could already assume an irregularity in the Pie Charts as I had noted a similarity in the historical charts. I needed the `Select Menu` so that I could analyse the relationship (if any) between the number of seats won in comparison to the votes received. Prior to the seeing the charts for myself I had not known of the “first past the post voting system” and it was a lucky reveal. I received help in this aspect from a CI tutor who suggested that a range dimension would solve my problem as a simple party dimension wasn’t providing the selection I needed for my analysis.
 The `Select Menu` for the historical charts are a simple isolation of other parties data. Although the data set spans a century, there are far fewer registered parties than during the 2019 election and this was taken into consideration when deciding upon how to present the data.
@@ -120,11 +120,11 @@ I have Apple devices and additionally a Windows 10 PC, so I enlisted help to tes
 
 The actions taken were: Load the GitHub pages site and view the charts. Click on the charts and see that the response was as expected; use the `Select Menu` to reduce the chart data and ensure the charts matched the selection; click on all the links and ensure that they open in a new browser tab that corresponded with the link text or and advise via Tooltip what the link is.
 
-*While testing I noticed that my Pie Charts `Select Menu` didn’t provide the results that I had envisioned. With the help of tutor support I was able to solve the issue by creating an additional range dimension that accurately provided the isolation of data that I needed for my analysis.*
+_While testing I noticed that my Pie Charts `Select Menu` didn’t provide the results that I had envisioned. With the help of tutor support I was able to solve the issue by creating an additional range dimension that accurately provided the isolation of data that I needed for my analysis._
 
 All the chart functionality worked as intended across the devices and browsers after the new range dimension was built. The navigation links and buttons were functioning properly.
 
-*During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener``` and that a tooltip would improve the user experience so these were added.*
+_During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener``` and that a tooltip would improve the user experience so these were added._
 
 I used [W3C Markup Validation Service](https://validator.w3.org/) to check my HTML and CSS code and was pleased that there were no errors aside from a missing div tag in the HTML.
 
