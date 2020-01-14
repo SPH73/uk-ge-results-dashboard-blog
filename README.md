@@ -10,43 +10,46 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 
 ### Table of Contents
 
-- [1. UX](#ux)
-- [2. Features](#features)
-- [2.1. Charts](#charts)
-- [2.1.1. Results Charts](#results-charts)
-- [2.1.2. Historical Results Charts](#historical-results-charts)
-- [2.1.3. Select Menu](#select-menu)
-- [2.2. Summary](#summary)
-- [2.3. About](#about)
-- [2.4. Final Comment](#final-comment)
-- [2.5. Sources](#sources)
-- [3. Improvements to implement](#improvements-to-implement)
-- [4. Technologies Used](#technologies-used)
-  - [4.1. Frameworks](#frameworks)
-  - [4.2. Toolkits](#toolkits)
-  - [4.2. Libraries](#libraries)
-- [5. Testing](#testing)
-- [6. Deployment](#deployment)
-- [7. Credits](#credits)
-- [8. Media](#media)
-- [9. Acknowledgements](#acknowledgments)
-- [10. Inspiration](#inspiration)
-- [11. Wireframes](#wirefames)
+- 1. [UX](#ux)
+- 2. [Features](#features)
+  - 2.1. [Charts](#charts)
+    - 2.1.1. [Results Charts](#results-charts)
+    - 2.1.2. [Historical Results Charts](#historical-results-charts)
+    - 2.1.3. [Select Menu](#select-menu)
+  - 2.2. [Summary](#summary)
+  - 2.3. [About](#about)
+  - 2.4. [Final Comment](#final-comment)
+  - 2.5 [Sources](#sources)
+- 3. [Improvements to implement](#improvements-to-implement)
+- 4. [Technologies Used](#technologies-used)
+  - 4.1 [Frameworks](#frameworks)
+  - 4.2 [Toolkits](#toolkits)
+  - 4.3 [Libraries](#libraries)
+- 5. [Testing](#testing)
+- 6. [Deployment](#deployment)
+- 7. [Credits](#credits)
+- 8. [Media](#media)
+- 9. [Acknowledgements](#acknowledgments)
+- 10. [Inspiration](#inspiration)
+- 11. [Wireframes](#wirefames)
 
 ## 1. <a>UX</a>
 
-My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more appropriate for a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [dc.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `svg`element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio which helped to achieve this end.
+My intention for the User Experience was to ensure that the site works on both mobile or desktop. Whilst a dashboard is more suited to a desktop sized screen, I focussed on balancing the size of the individual graphs such that they would be visible without being too small or too big on each media type. [DC.js has a method](https://dc-js.github.io/dc.js/docs/html/BaseMixin.html#useViewBoxResizing__anchor) that uses the `svg`element rather than chart width and height attributes, enabling the chart to resize responsively while maintaining the aspect ratio, which helped me to achieve this end. I have tried to make the site appealing to the users so that they become engaged in the presentations of data that avoid ambiguty so that they may become keen on their analysis as well as aesthetically pleasing with the choice of colour and typography and layout.
 
-_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._
+**_User: 1 As a user interested in the election results, I want to be able to examine the data visually rather than from a text format so that I can absorb the results more efficiently. I want to be able to interact with the data by filtering it to for analysis and comparison._**
 
-_User: 2 As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._
+**_User: 2 As a user interested in the general history of the UK elections I want to be able to view a time-line of the results. In a graph I can gain a clearer perspective and be able to absorb more data at once._**
 
-For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top they can navigate via the Sources link in the <Nav>. All data sources and additional resources I used are found in the <footer> section where again, they will find a duplicate button to help them navigate back to the charts (via the <nav>)should they so desire.
+_I have created charts from raw data selecting charts that i feel best represent the data type. They will assist both types of users to achieve their goals. The Pie Charts created for the latest election results are ideal for illustrating parts of a whole and as the dataset represents a single election. A Bubble Chart effectively provides a multidemensional visualisation enabling users to see the relationships and anomalies in the data._
 
-Page refresh buttons are located in each chart section however, the `Select Menu` can also reset the chart by clicking on Select All.
-For both types of user, I have tried to select graphs that would best represent the data type.
+_The Historical Charts display a much larger dataset. The different dimensions are presented in separate charts. The select menu for this sub-section allows the users to interact with the charts by filtering the data to a single party over the period of a century facilitating quick analysis of the data._
 
-Icons and Tooltips in the <Footer> provide additional information that can be quickly scanned for relevance.
+_To enable the users to easily refresh the charts I have placed a refresh <button> in close proximity to the indivudual chart sub-sections to aid further inquiry and analysis._
+
+_For User 1, I have strategically placed a `Back To Top` button beneath the charts. It is possible that this type of user may not be interested in the blog texts. However, should they wish to peruse relevant data sources, once they are back at the top, they can easily do so via the Sources link in the <Nav>. All data sources and additional resources I used are found in the <footer> section where again, they will find a duplicate button to help them navigate back to the charts (via the <nav>)should they so desire._
+
+_For user 2, I have written a summary, detailing a small amount of supplementary information and personal analysis. I also added additional reading resources to assist the user to gain broader perspecive on the UK Elections Icons and Tooltips in the <Footer> provide additional visual guidance that can be quickly scanned for relevance by each user type._
 
 ## 2. <a>Features</a>
 
@@ -96,7 +99,7 @@ I have been bothered that the colours for each party are not consistent. This is
 
 ### 4.2. <a>Toolkits</a>
 
-[Font-Awesome5](https://fontawesome.com/icons?d=gallery) for the footer icons.
+[Font-Awesome](https://www.bootstrapcdn.com/fontawesome/) for the footer icons.
 
 ### 4.3. <a>Libraries</a>
 
@@ -118,17 +121,17 @@ I was most particularly focussed on viewing the charts on each of the bowsers bo
 
 I have Apple devices and additionally a Windows 10 PC, so I enlisted help to test the functionality of the site on other devices to ensure that the page loaded quickly and the charts could be viewed.
 
-The actions taken were: Load the GitHub pages site and view the charts. Click on the charts and see that the response was as expected; use the `Select Menu` to reduce the chart data and ensure the charts matched the selection; click on all the links and ensure that they open in a new browser tab that corresponded with the link text or and advise via Tooltip what the link is.
+The actions taken were: Load the GitHub pages site and view the charts. Click on the charts and see that they have functionality as expected; use the `Select Menu` to filter a selection of the chart data and ensure the charts matched the selection criteria; click on all the links and ensure that they open in a new browser tab that corresponds with the link text or as per the Tooltip.
 
 _While testing I noticed that my Pie Charts `Select Menu` didn’t provide the results that I had envisioned. With the help of tutor support I was able to solve the issue by creating an additional range dimension that accurately provided the isolation of data that I needed for my analysis._
 
 All the chart functionality worked as intended across the devices and browsers after the new range dimension was built. The navigation links and buttons were functioning properly.
 
-_During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener``` and that a tooltip would improve the user experience so these were added._
+_During testing of the page links I noted that the `target=_blank` attribute wasn’t included when the links redirected me away from my site so this was added along with the `rel=“noopener”`to prevent abuse of`winder.opener``` and that a tooltip would improve the user experience so these were added in this phase of the project._
 
 I used [W3C Markup Validation Service](https://validator.w3.org/) to check my HTML and CSS code and was pleased that there were no errors aside from a missing div tag in the HTML.
 
-I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my javascript code. It highlighted some missing semicolons and that I was using the let variable keyword.
+I used [Beautify Tools](http://beautifytools.com/javascript-validator.php) to check my javascript code. It highlighted some missing semicolons and that I was using the let variable keyword, which is not always compatible with older browsers. However, during my own testing the `let` keyword was parsed without problems.
 
 ## 6. <a>Deployment</a>
 
