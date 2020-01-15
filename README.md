@@ -111,6 +111,8 @@ Naturally it was necessary to inlcude links to the original Data Sources and the
 
 I have been bothered that the colours for each party are not consistent. This is something I plan on addressing in the immediate future. The only reason I didn’t address it before submission is because I didn’t want to use more time on something that is a styling aspect and irrelevant to the project purpose, although I admit it provides a better user experience and needs to be amended.
 
+In addition, I spent a lot of time on the sizing of the chart and trying to override the size of the axes labels. I am still not satisfied and would like to improve them in relation to the chart and svg size. However, I plan to do this at the same time as the colour consistency issue mentioned above once the project has been assessed.
+
 ## Technologies Used
 
 ### Programming Languages
