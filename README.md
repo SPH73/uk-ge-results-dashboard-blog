@@ -205,8 +205,10 @@ Having just returned to England after a long period abroad, I found myself somew
 
 ## Wireframes
 
-The original wireframe was relevant to just the historical data but as the project went beyond the date of the 2019 elections I felt that it was important to include the lastest data as well, as I was also interested in finding out more from seeing the new data represented in a chart. They are only hand drawn wireframes. I had intended to do them in Balsamiq but lacked the time to learn to use the program. I will definitely learn to use it for future wireframes though.
+The original wireframe was relevant to just the historical data but as the project went beyond the date of the 2019 elections I felt that it was important to include the lastest data as well. I had intended to do them in Balsamiq but lacked the time to learn to use the program. I will definitely learn to use it for future wireframes though.
 
 ![Original Wireframe](assets/img/MS2-wireframe1.jpg)
+
+The following wireframes were drawn to restructure the page to include the charts for the latest results data.
 ![Wireframe 2](assets/img/MS2-wireframe2.jpg)
 ![Wireframe 3](assets/img/MS2-wireframe3.jpg)
