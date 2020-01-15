@@ -2,7 +2,7 @@
 
 ### Interactive Front End Development
 
-![Union Jack](assets/img/union-jack.jpg)
+<div style="align: center; ">![Union Jack](assets/img/union-jack.jpg)</div>
 
 # A Century of Great Britain's Voting Bias
 
@@ -198,8 +198,9 @@ For many aspects of the chart development I used the following tutorials, howeve
 ## Media
 
 The free images used to generate the `favicon` was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
-![Union Jack](assets/img/union-jack.jpg)
-![Houses of Parliament](assets/img/parliament.jpg)
+
+<div style="align: center;">![Union Jack](assets/img/union-jack.jpg)</div>
+<div style="align: center;">![Houses of Parliament](assets/img/parliament.jpg)</div>
 
 In combination they became my favicon for the site. Each image alone was the incorrect aspect ratio suited to a favicon image, but perfect in combination and in my opinion, a better image for the site.
 ![Favicon](assets/img/favicon-16x16.png)
