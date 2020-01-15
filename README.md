@@ -18,8 +18,8 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 2. [Features](#features)
 
    - [Charts](#charts)
-     - [Results Charts](#results-charts)
-     - [Historical Results Charts](#historical-results-charts)
+     - [2019 Results](#2019-results)
+     - [Historical Results](#historical-results)
      - [Select Menu](#select-menu)
    - [Summary](#summary)
    - [About](#about)
@@ -78,11 +78,11 @@ _For user 2, I have written a summary, detailing a small amount of supplementary
 
 The main features of this project are the graphs. There are five graphs to illustrate the two different datasets covering the latest results and the historical results. The former being an addition that became relevant during development.
 
-#### 2019 Results Charts
+#### 2019 Results
 
 For the latest election results charts, there are 2 Pie Charts and a Bubble chart. The Pie Charts refer to the votes and seats results respectively and the Bubble Chart collates the data presented in each Pie Chart and provides a comparison. It was included to elaborate the “first past the post” voting system that the UK adopts, essentially to see how disparate the votes to seats figures are.
 
-#### Historical Results Charts
+#### Historical Results
 
 A Stacked Bar Chart and Composite Chart display the full results for past century of the votes and seats results respectively, for each party. The intention for these charts was to show how the individual party’s fared in respect of their competition in order to highlight periods of strength and/or weakness. I had particularly hope to see whether there was a pattern associated to historical events. N.B. These charts make it possible to do so and I am continuing research on this aspect of my inquiry and intend to document my conclusion at a later date.
 
