@@ -2,6 +2,8 @@
 
 ### Interactive Front End Development
 
+![Union Jack](assets/img/union-jack.jpg)
+
 # A Century of Great Britain's Voting Bias
 
 The aim of this project was to create a dashboard style blog with a visual representation of voting bias over the past century, using a presentation of known results, to see whether there was any noticeable correlation with historical events which may have played a role in swaying votes in a particular direction and how if at all it affected the distribution of seats in parliament.
@@ -34,6 +36,7 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
    - [Frameworks](#frameworks)
    - [Toolkits](#toolkits)
    - [Libraries](#libraries)
+   - [Version Control & Deployment](#version-control-&-deployment)
 
 5. [Testing](#testing)
 
@@ -131,6 +134,8 @@ Another item to mention is the labelling, during testing by someone abroad, they
 ### Toolkits
 
 - [Font-Awesome](https://www.bootstrapcdn.com/fontawesome/) for the footer icons.
+- [Favicon & App Icon Generator](https://www.favicon-generator.org/) to generate the favicon.
+- [IMGonline.com.ua](https://www.imgonline.com.ua/eng/combine-two-images-into-one.php) to combine the two images used for the favicon.
 
 ### Libraries
 
@@ -138,9 +143,11 @@ Another item to mention is the labelling, during testing by someone abroad, they
   crossfilter.js(https://square.github.io/crossfilter/) for multidemsional data filtering. Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser.
   [\* DC.js](https://dc-js.github.io/dc.js/docs/html/index.html) for creating the interactive dashboard. dc.js is a javascript charting library with native crossfilter support, allowing highly efficient exploration on large multi-dimensional datasets (inspired by crossfilter's demo). It leverages d3 to render charts in CSS-friendly SVG format. Charts rendered using dc.js are data driven and reactive and therefore provide instant feedback to user interaction.
 
+### Version Control & Deployment
+
 - [Git](https://git-scm.com) for version control. Git is a VCS that allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time etc.
 - [GitHub](https://github.com/) for remote version control and remote repository store for the project. It is a coding social site that allows you to upload code repositories for storage in the Git Version Control System.
-  [GitHub pages] for deployment. It allows you to turn repositories into web pages.
+- [GitHub pages](https://pages.github.com/) for deployment. It allows you to turn repositories into web pages.
   Favicon Generator to create the favicons.
   In order to create the favicon image with suitable correct aspect ratio, I merged two images together using this free online tool by IMGonline.com.ua
 
@@ -190,6 +197,11 @@ For many aspects of the chart development I used the following tutorials, howeve
 ## Media
 
 The free images used to generate the `favicon` was obtained from [here](https://duckduckgo.com/?q=free+images+for+britain&atb=v187-1&iar=images&iax=images&ia=images).
+![Union Jack](assets/img/union-jack.jpg)
+![Houses of Parliament](assets/img/parliament.jpg)
+
+In combination they became my favicon for the site. Each image alone was the incorrect aspect ratio suited to a favicon image, but perfect in combination and in my opinion, a better image for the site.
+![Favicon](assets/img/favicon-16x16.png)
 
 ## Acknowledgements
 
