@@ -46,7 +46,7 @@ More specifically, I wanted to see whether any ordinary person who isn't an expe
 8. [Media](#media)
 9. [Acknowledgements](#acknowledgments)
 10. [Inspiration](#inspiration)
-11. [Wireframes](#wirefames)
+11. [Wireframes](#wireframes)
 
 ## UX
 
