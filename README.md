@@ -113,6 +113,8 @@ I have been bothered that the colours for each party are not consistent. This is
 
 In addition, I spent a lot of time on the sizing of the chart and trying to override the size of the axes labels. I am still not satisfied and would like to improve them in relation to the chart and svg size. However, I plan to do this at the same time as the colour consistency issue mentioned above once the project has been assessed.
 
+Another item to mention is the labelling, during testing by someone abroad, they made the comment that they were not sure what the labels on the chart meant, so this is something I shall address before I deploy the site as a sub-domain on personal domain on netlify and work on the SEO using Google tools.
+
 ## Technologies Used
 
 ### Programming Languages
@@ -144,11 +146,11 @@ In addition, I spent a lot of time on the sizing of the chart and trying to over
 
 ### Testing
 
-I have found [Test Cafe Studio](https://www.devexpress.com/products/testcafestudio/) however, at present I am not comfortable with writing automated tests and decided it was prudent to chose manual testing for now and attempt automated testing when the clock isn’t ticking. In order to ensure my project is production ready I have manually tested it on the following browsers: Chrome, Safari, Firefox, IE, Opera and Opera Mini.
+I have found [Test Cafe Studio](https://www.devexpress.com/products/testcafestudio/) however, at present I am not proficient with writing automated tests and decided it was prudent to chose manual testing for now and attempt automated testing when the clock isn’t ticking. In order to ensure my project is production ready I have manually tested it on the following browsers: Chrome, Safari, Firefox, IE, Opera and Opera Mini.
 
 I was most particularly focussed on viewing the charts on each of the bowsers both on a mobile phone, tablet as well as a desktop.
 
-I have Apple devices and additionally a Windows 10 PC, so I enlisted help to test the functionality of the site on other devices to ensure that the page loaded quickly and the charts could be viewed.
+I have Apple devices and additionally a Windows 10 PC, so I enlisted help to test the functionality of the site on other devices within the range of browsers to ensure that the page loaded quickly and the charts could be viewed and that the functionality worked.
 
 The actions taken were: Load the GitHub pages site and view the charts. Click on the charts and see that they have functionality as expected; use the `Select Menu` to filter a selection of the chart data and ensure the charts matched the selection criteria; click on all the links and ensure that they open in a new browser tab that corresponds with the link text or as per the Tooltip.
 
