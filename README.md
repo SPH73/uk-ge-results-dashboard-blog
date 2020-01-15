@@ -209,4 +209,4 @@ The original wireframe was relevant to just the historical data but as the proje
 
 ![Original Wireframe](assets/img/MS2-wireframe1.jpg)
 ![Wireframe 2](assets/img/MS2-wireframe2.jpg)
-![Wireframe 3](assets/img/MS2-wireframe-3.jpg)
+![Wireframe 3](assets/img/MS2-wireframe3.jpg)
