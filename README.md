@@ -119,9 +119,9 @@ Another item to mention is the labelling, during testing by someone abroad, they
 
 ### Programming Languages
 
-- [HTML5] for the property and behaviour of the webpage content and layout.
+- [HTML5](https://dev.w3.org/html5/html-author/) for the property and behaviour of the webpage content and layout.
 - [CSS](http://www.css3.com/) to add additional styling for the site.
-- [JavaScript] for dynamic functionality. JavaScript is the programming language of the web used to make web pages interactive. I used it to code the charts and provide functionality making them interactive as we for the button functionality on the site.
+- [JavaScript](https://devdocs.io/javascript-map/) for dynamic functionality. JavaScript is the programming language of the web used to make web pages interactive. I used it to code the charts and provide functionality making them interactive as we for the button functionality on the site.
 
 ### Frameworks
 
